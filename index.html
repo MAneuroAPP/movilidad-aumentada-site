@@ -4,69 +4,85 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Movilidad Aumentada Neuro | Evidencia y Transición al Deporte</title>
-  <!-- Tailwind CSS CDN para renderizado profesional sin build local -->
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
   <style>
-    body { font-family: 'Inter', sans-serif; }
-    .badge-step { display: inline-flex; align-items: center; justify-content: center; width: 2.2rem; height: 2.2rem; border-radius: 9999px; }
+    body { font-family: 'Plus Jakarta Sans', sans-serif; }
+    .tab-btn.active {
+      background-color: #0f172a;
+      color: #ffffff;
+      border-color: #0f172a;
+    }
   </style>
 </head>
-<body class="bg-slate-50 text-slate-800 antialiased selection:bg-teal-100 selection:text-teal-900">
+<body class="bg-slate-50 text-slate-800 antialiased selection:bg-teal-500 selection:text-white">
 
   <!-- NAVEGACIÓN SUPERIOR -->
-  <header class="sticky top-0 z-50 bg-white/90 backdrop-blur border-b border-slate-200">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
-      <a href="#portada" class="flex items-center gap-3">
-        <div class="w-8 h-8 rounded-lg bg-teal-600 text-white flex items-center justify-center font-bold text-sm shadow-sm">MA</div>
-        <span class="font-bold text-slate-900 tracking-tight text-lg">MA Neuro</span>
+  <header class="sticky top-0 z-50 bg-white/95 backdrop-blur-md border-b border-slate-200 shadow-sm">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+      <a href="#portada" class="flex items-center gap-3 group">
+        <img src="https://movilidad-aumentada-neuro-evidencia.jlvillamord.chatgpt.site/assets/logo-ma-neuro.png" alt="Logo Movilidad Aumentada Neuro" class="h-11 w-auto rounded-md transition group-hover:scale-105" onerror="this.src='https://placehold.co/100x100?text=MA+Neuro'">
+        <div class="flex flex-col">
+          <span class="font-extrabold text-slate-900 tracking-tight text-lg leading-tight">MA Neuro</span>
+          <span class="text-[10px] uppercase font-bold text-teal-600 tracking-wider">Movilidad Aumentada</span>
+        </div>
       </a>
-      <nav class="hidden md:flex items-center gap-6 text-sm font-medium text-slate-600">
+      <nav class="hidden md:flex items-center gap-8 text-sm font-semibold text-slate-600">
         <a href="#portada" class="hover:text-teal-600 transition">Portada</a>
         <a href="#como-funciona" class="hover:text-teal-600 transition">Cómo funciona</a>
         <a href="#clubes-deportivos" class="hover:text-teal-600 transition">Clubes</a>
         <a href="#colectivos" class="hover:text-teal-600 transition">Colectivos</a>
-        <a href="#que-no-afirmamos" class="hover:text-teal-600 transition">Qué no afirmamos</a>
+        <a href="#que-no-afirmamos" class="hover:text-teal-600 transition">Criterio Ético</a>
       </nav>
-      <a href="#colectivos" class="inline-flex items-center px-4 py-2 text-sm font-medium text-white bg-teal-600 hover:bg-teal-700 rounded-lg shadow-sm transition">
+      <a href="#colectivos" class="inline-flex items-center px-4 py-2 text-sm font-semibold text-white bg-teal-600 hover:bg-teal-700 rounded-lg shadow transition">
         Casos de uso
       </a>
     </div>
   </header>
 
   <!-- PORTADA / HERO -->
-  <section id="portada" class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-16 pb-12">
+  <section id="portada" class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-12 pb-16">
     <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
       <div class="lg:col-span-7 space-y-6">
-        <span class="inline-block px-3 py-1 bg-teal-50 text-teal-700 text-xs font-semibold rounded-full uppercase tracking-wider border border-teal-200">
-          Programa de transición a actividad física y deporte
-        </span>
-        <h1 class="text-4xl sm:text-5xl font-extrabold text-slate-900 tracking-tight leading-tight">
-          MOVILIDAD AUMENTADA NEURO
+        <div class="flex items-center gap-2">
+          <span class="px-3 py-1 bg-teal-50 text-teal-700 text-xs font-bold rounded-full uppercase tracking-wider border border-teal-200">
+            Programa de transición a actividad física y deporte
+          </span>
+        </div>
+        <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-slate-900 tracking-tight leading-tight">
+          MOVILIDAD AUMENTADA <span class="text-teal-600">NEURO</span>
         </h1>
         <p class="text-lg text-slate-600 leading-relaxed">
           Movilidad Aumentada Neuro crea una red de apoyo que conecta entidades, profesionales, tecnología, voluntariado y clubes deportivos. Su objetivo es facilitar el camino de cada participante para que pueda conseguir motivación, aumento de la movilidad, adaptación a una actividad e incorporación a una actividad física y deportiva.
         </p>
+        
         <div class="flex flex-wrap gap-3 pt-2">
-          <a href="#colectivos" class="px-5 py-2.5 bg-slate-900 text-white rounded-lg font-medium hover:bg-slate-800 transition text-sm shadow">Ver casos de uso</a>
-          <a href="https://www.dynamics-vr.com/software-rehabilitacion-virtual/" target="_blank" rel="noreferrer" class="px-5 py-2.5 bg-white border border-slate-300 text-slate-700 rounded-lg font-medium hover:bg-slate-50 transition text-sm">Dynamics VR</a>
-          <a href="https://www.dynamics-vr.com/blog-de-fisioterapia-dynamics-vr/" target="_blank" rel="noreferrer" class="px-5 py-2.5 bg-white border border-slate-300 text-slate-700 rounded-lg font-medium hover:bg-slate-50 transition text-sm">Artículos</a>
-          <a href="#clubes-deportivos" class="px-5 py-2.5 bg-white border border-slate-300 text-slate-700 rounded-lg font-medium hover:bg-slate-50 transition text-sm">Clubes deportivos</a>
+          <a href="#colectivos" class="px-6 py-3 bg-slate-900 text-white rounded-xl font-semibold hover:bg-slate-800 transition text-sm shadow-md">Consultar Casos de Uso</a>
+          <a href="https://www.dynamics-vr.com/software-rehabilitacion-virtual/" target="_blank" rel="noreferrer" class="px-6 py-3 bg-white border border-slate-300 text-slate-700 rounded-xl font-semibold hover:bg-slate-50 transition text-sm shadow-sm">Dynamics VR</a>
+          <a href="https://www.dynamics-vr.com/blog-de-fisioterapia-dynamics-vr/" target="_blank" rel="noreferrer" class="px-6 py-3 bg-white border border-slate-300 text-slate-700 rounded-xl font-semibold hover:bg-slate-50 transition text-sm shadow-sm">Artículos</a>
+          <a href="#clubes-deportivos" class="px-6 py-3 bg-white border border-slate-300 text-slate-700 rounded-xl font-semibold hover:bg-slate-50 transition text-sm shadow-sm">Clubes Deportivos</a>
         </div>
       </div>
-      <div class="lg:col-span-5">
-        <div class="bg-gradient-to-br from-slate-100 to-teal-50 rounded-2xl p-8 border border-slate-200 shadow-sm space-y-4 text-center">
-          <div class="text-xs uppercase tracking-wider text-slate-500 font-semibold">Propósito central</div>
-          <blockquote class="text-xl font-medium text-slate-800 italic leading-snug">
-            “El destino del programa es la participación real: moverse, probar, elegir y sostener actividad.”
-          </blockquote>
-          <div class="pt-4 border-t border-slate-200 flex justify-center gap-2">
-            <span class="px-2.5 py-1 bg-white text-slate-700 border border-slate-200 rounded text-xs">Moverse</span>
-            <span class="px-2.5 py-1 bg-white text-slate-700 border border-slate-200 rounded text-xs">Probar</span>
-            <span class="px-2.5 py-1 bg-white text-slate-700 border border-slate-200 rounded text-xs">Elegir</span>
-            <span class="px-2.5 py-1 bg-white text-slate-700 border border-slate-200 rounded text-xs">Sostener</span>
+
+      <div class="lg:col-span-5 space-y-6">
+        <!-- Imagen Principal Acompañada -->
+        <div class="relative rounded-2xl overflow-hidden shadow-xl border border-slate-200 group">
+          <img src="https://movilidad-aumentada-neuro-evidencia.jlvillamord.chatgpt.site/assets/deporte-naturaleza-ayuda.jpeg" alt="Actividad física acompañada en un entorno natural" class="w-full h-72 object-cover object-center group-hover:scale-105 transition duration-500">
+          <div class="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-slate-950/20 to-transparent flex items-end p-6">
+            <p class="text-white font-medium text-base italic leading-snug">
+              “El destino del programa es la participación real: moverse, probar, elegir y sostener actividad.”
+            </p>
+          </div>
+        </div>
+
+        <!-- Módulo Dynamics VR -->
+        <div class="bg-white p-4 rounded-xl border border-slate-200 shadow-sm flex items-center gap-4">
+          <img src="https://movilidad-aumentada-neuro-evidencia.jlvillamord.chatgpt.site/assets/dynamics-vr-ma-neuro.png" alt="DynamicsVR y gafas de realidad virtual" class="h-16 w-auto rounded-lg object-contain bg-slate-50 p-1 border border-slate-100">
+          <div class="text-xs text-slate-600">
+            <span class="font-bold text-slate-900 block text-sm">Tecnología de Rehabilitación Virtual</span>
+            Soporte tecnológico opcional para potenciar la motivación y transferencia.
           </div>
         </div>
       </div>
@@ -74,286 +90,461 @@
   </section>
 
   <!-- CLUBES DEPORTIVOS -->
-  <section id="clubes-deportivos" class="bg-white border-y border-slate-200 py-12">
+  <section id="clubes-deportivos" class="bg-white border-y border-slate-200 py-16">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="max-w-3xl mb-8">
-        <p class="text-xs font-bold uppercase tracking-wider text-teal-600">Clubes deportivos</p>
-        <h2 class="text-2xl sm:text-3xl font-bold text-slate-900 mt-1">Actividades para primeras experiencias reales</h2>
-        <p class="text-slate-600 mt-2 text-sm sm:text-base">La incorporación a un club o actividad debe adaptarse a la valoración profesional, las preferencias de la persona y los apoyos disponibles.</p>
+      <div class="max-w-3xl mb-10">
+        <span class="text-xs font-bold uppercase tracking-wider text-teal-600 bg-teal-50 px-3 py-1 rounded-full border border-teal-200">Clubes deportivos</span>
+        <h2 class="text-3xl font-extrabold text-slate-900 mt-2">Actividades para primeras experiencias reales</h2>
+        <p class="text-slate-600 mt-2 text-base">La incorporación a un club o actividad debe adaptarse a la valoración profesional, las preferencias de la persona y los apoyos disponibles.</p>
       </div>
-      <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-3">
-        <div class="flex items-center p-3 rounded-lg border border-slate-200 bg-slate-50 text-sm font-medium text-slate-800 hover:border-teal-500 transition">Tiro con arco</div>
-        <div class="flex items-center p-3 rounded-lg border border-slate-200 bg-slate-50 text-sm font-medium text-slate-800 hover:border-teal-500 transition">Tenis de mesa</div>
-        <div class="flex items-center p-3 rounded-lg border border-slate-200 bg-slate-50 text-sm font-medium text-slate-800 hover:border-teal-500 transition">Baloncesto</div>
-        <div class="flex items-center p-3 rounded-lg border border-slate-200 bg-slate-50 text-sm font-medium text-slate-800 hover:border-teal-500 transition">Piragüismo</div>
-        <div class="flex items-center p-3 rounded-lg border border-slate-200 bg-slate-50 text-sm font-medium text-slate-800 hover:border-teal-500 transition">Senderismo</div>
-        <div class="flex items-center p-3 rounded-lg border border-slate-200 bg-slate-50 text-sm font-medium text-slate-800 hover:border-teal-500 transition">Orientación</div>
-        <div class="flex items-center p-3 rounded-lg border border-slate-200 bg-slate-50 text-sm font-medium text-slate-800 hover:border-teal-500 transition">Atletismo</div>
-        <div class="flex items-center p-3 rounded-lg border border-slate-200 bg-slate-50 text-sm font-medium text-slate-800 hover:border-teal-500 transition">CornHole</div>
-        <div class="flex items-center p-3 rounded-lg border border-slate-200 bg-slate-50 text-sm font-medium text-slate-800 hover:border-teal-500 transition">Esgrima</div>
-        <div class="flex items-center p-3 rounded-lg border border-slate-200 bg-slate-50 text-sm font-medium text-slate-800 hover:border-teal-500 transition">Pesca</div>
+
+      <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-4">
+        <div class="flex items-center gap-3 p-4 rounded-xl border border-slate-200 bg-slate-50 text-sm font-bold text-slate-800 hover:border-teal-500 hover:bg-white transition shadow-sm">
+          <span class="w-2.5 h-2.5 rounded-full bg-teal-500"></span> Tiro con arco
+        </div>
+        <div class="flex items-center gap-3 p-4 rounded-xl border border-slate-200 bg-slate-50 text-sm font-bold text-slate-800 hover:border-teal-500 hover:bg-white transition shadow-sm">
+          <span class="w-2.5 h-2.5 rounded-full bg-teal-500"></span> Tenis de mesa
+        </div>
+        <div class="flex items-center gap-3 p-4 rounded-xl border border-slate-200 bg-slate-50 text-sm font-bold text-slate-800 hover:border-teal-500 hover:bg-white transition shadow-sm">
+          <span class="w-2.5 h-2.5 rounded-full bg-teal-500"></span> Baloncesto
+        </div>
+        <div class="flex items-center gap-3 p-4 rounded-xl border border-slate-200 bg-slate-50 text-sm font-bold text-slate-800 hover:border-teal-500 hover:bg-white transition shadow-sm">
+          <span class="w-2.5 h-2.5 rounded-full bg-teal-500"></span> Piragüismo
+        </div>
+        <div class="flex items-center gap-3 p-4 rounded-xl border border-slate-200 bg-slate-50 text-sm font-bold text-slate-800 hover:border-teal-500 hover:bg-white transition shadow-sm">
+          <span class="w-2.5 h-2.5 rounded-full bg-teal-500"></span> Senderismo
+        </div>
+        <div class="flex items-center gap-3 p-4 rounded-xl border border-slate-200 bg-slate-50 text-sm font-bold text-slate-800 hover:border-teal-500 hover:bg-white transition shadow-sm">
+          <span class="w-2.5 h-2.5 rounded-full bg-teal-500"></span> Orientación
+        </div>
+        <div class="flex items-center gap-3 p-4 rounded-xl border border-slate-200 bg-slate-50 text-sm font-bold text-slate-800 hover:border-teal-500 hover:bg-white transition shadow-sm">
+          <span class="w-2.5 h-2.5 rounded-full bg-teal-500"></span> Atletismo
+        </div>
+        <div class="flex items-center gap-3 p-4 rounded-xl border border-slate-200 bg-slate-50 text-sm font-bold text-slate-800 hover:border-teal-500 hover:bg-white transition shadow-sm">
+          <span class="w-2.5 h-2.5 rounded-full bg-teal-500"></span> CornHole
+        </div>
+        <div class="flex items-center gap-3 p-4 rounded-xl border border-slate-200 bg-slate-50 text-sm font-bold text-slate-800 hover:border-teal-500 hover:bg-white transition shadow-sm">
+          <span class="w-2.5 h-2.5 rounded-full bg-teal-500"></span> Esgrima
+        </div>
+        <div class="flex items-center gap-3 p-4 rounded-xl border border-slate-200 bg-slate-50 text-sm font-bold text-slate-800 hover:border-teal-500 hover:bg-white transition shadow-sm">
+          <span class="w-2.5 h-2.5 rounded-full bg-teal-500"></span> Pesca
+        </div>
       </div>
     </div>
   </section>
 
-  <!-- CÓMO FUNCIONA -->
-  <section id="como-funciona" class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+  <!-- CÓMO FUNCIONA MA NEURO (ITINERARIO EN 6 PASOS) -->
+  <section id="como-funciona" class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
     <div class="max-w-3xl mb-12">
-      <p class="text-xs font-bold uppercase tracking-wider text-teal-600">Cómo funciona MA Neuro</p>
-      <h2 class="text-3xl font-bold text-slate-900 mt-1">Del primer contacto a la participación sostenida</h2>
-      <p class="text-slate-600 mt-3 text-base">La realidad virtual se utiliza únicamente cuando aporta valor al participante. Una persona puede recorrer el programa completo sin utilizar realidad virtual.</p>
+      <span class="text-xs font-bold uppercase tracking-wider text-teal-600 bg-teal-50 px-3 py-1 rounded-full border border-teal-200">Cómo funciona MA Neuro</span>
+      <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 mt-2">Del primer contacto a la participación sostenida</h2>
+      <p class="text-slate-600 mt-3 text-base leading-relaxed">La realidad virtual se utiliza únicamente cuando aporta valor al participante. Una persona puede recorrer el programa completo sin utilizar realidad virtual.</p>
     </div>
 
     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-      <div class="bg-white p-6 rounded-xl border border-slate-200 shadow-sm relative hover:border-teal-500 transition">
-        <div class="badge-step bg-slate-900 text-white font-bold text-sm mb-4">1</div>
+      <div class="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm hover:shadow-md transition">
+        <div class="w-10 h-10 rounded-full bg-slate-900 text-white font-bold flex items-center justify-center text-sm mb-4">1</div>
         <h3 class="font-bold text-lg text-slate-900">Entidad de referencia</h3>
         <p class="text-slate-600 text-sm mt-2 leading-relaxed">Los terapeutas se forman en rehabilitación con RV, detectan necesidades, facilitan la entrada al programa y comparten experiencias con otras entidades.</p>
       </div>
 
-      <div class="bg-white p-6 rounded-xl border border-slate-200 shadow-sm relative hover:border-teal-500 transition">
-        <div class="badge-step bg-slate-900 text-white font-bold text-sm mb-4">2</div>
+      <div class="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm hover:shadow-md transition">
+        <div class="w-10 h-10 rounded-full bg-slate-900 text-white font-bold flex items-center justify-center text-sm mb-4">2</div>
         <h3 class="font-bold text-lg text-slate-900">Valoración</h3>
         <p class="text-slate-600 text-sm mt-2 leading-relaxed">Se identifican el perfil de la persona, sus capacidades y sus intereses para crear el recorrido terapéutico y deportivo adecuado.</p>
       </div>
 
-      <div class="bg-white p-6 rounded-xl border border-slate-200 shadow-sm relative hover:border-teal-500 transition border-l-4 border-l-teal-600">
-        <div class="badge-step bg-teal-600 text-white font-bold text-sm mb-4">3</div>
+      <div class="bg-white p-6 rounded-2xl border-2 border-teal-500 shadow-md relative">
+        <span class="absolute -top-3 right-4 bg-teal-600 text-white text-[10px] font-bold px-2 py-0.5 rounded-full uppercase tracking-wider">Opcional</span>
+        <div class="w-10 h-10 rounded-full bg-teal-600 text-white font-bold flex items-center justify-center text-sm mb-4">3</div>
         <h3 class="font-bold text-lg text-slate-900">Tecnología opcional</h3>
         <p class="text-slate-600 text-sm mt-2 leading-relaxed">Se incorpora Dynamics VR con el objetivo de aumentar la movilidad, y solo cuando puede mejorar capacidades, adherencia, motivación o responder a necesidades concretas.</p>
       </div>
 
-      <div class="bg-white p-6 rounded-xl border border-slate-200 shadow-sm relative hover:border-teal-500 transition">
-        <div class="badge-step bg-slate-900 text-white font-bold text-sm mb-4">4</div>
+      <div class="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm hover:shadow-md transition">
+        <div class="w-10 h-10 rounded-full bg-slate-900 text-white font-bold flex items-center justify-center text-sm mb-4">4</div>
         <h3 class="font-bold text-lg text-slate-900">Experiencia deportiva</h3>
         <p class="text-slate-600 text-sm mt-2 leading-relaxed">Las personas prueban actividades deportivas de una manera controlada, adaptada y motivadora.</p>
       </div>
 
-      <div class="bg-white p-6 rounded-xl border border-slate-200 shadow-sm relative hover:border-teal-500 transition">
-        <div class="badge-step bg-slate-900 text-white font-bold text-sm mb-4">5</div>
+      <div class="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm hover:shadow-md transition">
+        <div class="w-10 h-10 rounded-full bg-slate-900 text-white font-bold flex items-center justify-center text-sm mb-4">5</div>
         <h3 class="font-bold text-lg text-slate-900">Club y actividad</h3>
         <p class="text-slate-600 text-sm mt-2 leading-relaxed">La incorporación a un club permite realizar actividad física y sentirse parte de un grupo.</p>
       </div>
 
-      <div class="bg-white p-6 rounded-xl border border-slate-200 shadow-sm relative hover:border-teal-500 transition">
-        <div class="badge-step bg-slate-900 text-white font-bold text-sm mb-4">6</div>
+      <div class="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm hover:shadow-md transition">
+        <div class="w-10 h-10 rounded-full bg-slate-900 text-white font-bold flex items-center justify-center text-sm mb-4">6</div>
         <h3 class="font-bold text-lg text-slate-900">Seguimiento</h3>
         <p class="text-slate-600 text-sm mt-2 leading-relaxed">La valoración y el análisis permiten identificar necesidades, avances y ajustes del programa.</p>
       </div>
     </div>
   </section>
 
-  <!-- QUÉ NO AFIRMAMOS (DESCARGO / CRITERIO ÉTICO) -->
-  <section id="que-no-afirmamos" class="bg-amber-50/70 border-y border-amber-200 py-12">
+  <!-- QUÉ NO AFIRMAMOS -->
+  <section id="que-no-afirmamos" class="bg-amber-50/70 border-y border-amber-200/80 py-16">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="max-w-3xl mb-6">
-        <span class="text-xs font-bold uppercase tracking-wider text-amber-800">Criterio deontológico y metodológico</span>
-        <h2 class="text-2xl font-bold text-slate-900 mt-1">Qué no afirmamos</h2>
+      <div class="max-w-3xl mb-8">
+        <span class="text-xs font-bold uppercase tracking-wider text-amber-800 bg-amber-100 px-3 py-1 rounded-full border border-amber-300">Rigor metodológico</span>
+        <h2 class="text-2xl sm:text-3xl font-extrabold text-slate-900 mt-2">Qué no afirmamos</h2>
       </div>
-      <ul class="grid grid-cols-1 md:grid-cols-2 gap-4 text-sm text-slate-700">
-        <li class="flex items-start gap-3 bg-white p-4 rounded-lg border border-amber-200">
-          <span class="text-amber-600 font-bold">✕</span>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-4 text-sm text-slate-700">
+        <div class="flex items-start gap-3 bg-white p-5 rounded-xl border border-amber-200 shadow-sm">
+          <span class="text-rose-600 font-bold text-base">✕</span>
           <span>Movilidad Aumentada Neuro no afirma que la realidad virtual cure ninguna discapacidad o enfermedad.</span>
-        </li>
-        <li class="flex items-start gap-3 bg-white p-4 rounded-lg border border-amber-200">
-          <span class="text-amber-600 font-bold">✕</span>
+        </div>
+        <div class="flex items-start gap-3 bg-white p-5 rounded-xl border border-amber-200 shadow-sm">
+          <span class="text-rose-600 font-bold text-base">✕</span>
           <span>No sustituye fisioterapia, rehabilitación ni atención sanitaria.</span>
-        </li>
-        <li class="flex items-start gap-3 bg-white p-4 rounded-lg border border-amber-200">
-          <span class="text-amber-600 font-bold">✕</span>
+        </div>
+        <div class="flex items-start gap-3 bg-white p-5 rounded-xl border border-amber-200 shadow-sm">
+          <span class="text-rose-600 font-bold text-base">✕</span>
           <span>No presupone que la realidad virtual sea apropiada para todas las personas.</span>
-        </li>
-        <li class="flex items-start gap-3 bg-white p-4 rounded-lg border border-amber-200">
-          <span class="text-amber-600 font-bold">✕</span>
+        </div>
+        <div class="flex items-start gap-3 bg-white p-5 rounded-xl border border-amber-200 shadow-sm">
+          <span class="text-rose-600 font-bold text-base">✕</span>
           <span>No atribuye a DynamicsVR resultados obtenidos con otras plataformas o tecnologías.</span>
-        </li>
-        <li class="flex items-start gap-3 bg-white p-4 rounded-lg border border-amber-200 md:col-span-2">
-          <span class="text-amber-600 font-bold">✕</span>
+        </div>
+        <div class="flex items-start gap-3 bg-white p-5 rounded-xl border border-amber-200 shadow-sm md:col-span-2">
+          <span class="text-rose-600 font-bold text-base">✕</span>
           <span>Las decisiones sobre uso, intensidad y adaptación deben realizarse según valoración profesional.</span>
-        </li>
-      </ul>
+        </div>
+      </div>
     </div>
   </section>
 
-  <!-- COLECTIVOS Y CASOS DE USO -->
-  <section id="colectivos" class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+  <!-- SECCIÓN DINÁMICA DE COLECTIVOS Y EVIDENCIA -->
+  <section id="colectivos" class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
     <div class="max-w-3xl mb-10">
-      <p class="text-xs font-bold uppercase tracking-wider text-teal-600">Evidencia por colectivos</p>
-      <h2 class="text-3xl font-bold text-slate-900 mt-1">Consulta cada perfil con la misma estructura</h2>
-      <p class="text-slate-600 mt-2 text-sm sm:text-base">Cada sección distingue necesidades, aportación del programa, papel potencial de la realidad virtual, estudios originales, nivel de evidencia y preguntas que MA Neuro podría estudiar.</p>
+      <span class="text-xs font-bold uppercase tracking-wider text-teal-600 bg-teal-50 px-3 py-1 rounded-full border border-teal-200">Evidencia por colectivos</span>
+      <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 mt-2">Consulta cada perfil con la misma estructura</h2>
+      <p class="text-slate-600 mt-2 text-base">Haz clic en cada colectivo o escribe en el buscador para consultar las necesidades, aportación del programa y evidencia científica.</p>
     </div>
 
-    <!-- Pestañas interactivas de colectivos -->
-    <div class="flex flex-wrap gap-2 pb-6 border-b border-slate-200">
-      <a href="#ictus" class="px-4 py-2 text-xs font-medium rounded-full bg-slate-900 text-white">Ictus</a>
-      <a href="#dca-traumatico" class="px-4 py-2 text-xs font-medium rounded-full bg-white border border-slate-300 text-slate-700 hover:bg-slate-100">Daño cerebral adquirido traumático</a>
-      <a href="#paralisis-cerebral" class="px-4 py-2 text-xs font-medium rounded-full bg-white border border-slate-300 text-slate-700 hover:bg-slate-100">Parálisis cerebral</a>
-      <a href="#autismo" class="px-4 py-2 text-xs font-medium rounded-full bg-white border border-slate-300 text-slate-700 hover:bg-slate-100">Trastorno del espectro autista</a>
-      <a href="#discapacidad-visual" class="px-4 py-2 text-xs font-medium rounded-full bg-white border border-slate-300 text-slate-700 hover:bg-slate-100">Discapacidad visual y baja visión</a>
-      <a href="#trasplante-hepatico" class="px-4 py-2 text-xs font-medium rounded-full bg-white border border-slate-300 text-slate-700 hover:bg-slate-100">Trasplante hepático</a>
-      <a href="#ela" class="px-4 py-2 text-xs font-medium rounded-full bg-white border border-slate-300 text-slate-700 hover:bg-slate-100">Enfermedades neurodegenerativas</a>
-      <a href="#otros-colectivos" class="px-4 py-2 text-xs font-medium rounded-full bg-white border border-slate-300 text-slate-700 hover:bg-slate-100">Otros casos de uso</a>
+    <!-- Buscador Dinámico en Tiempo Real -->
+    <div class="mb-6">
+      <input type="text" id="filterInput" onkeyup="filterProfiles()" placeholder="Escribe para buscar (ej: ictus, equilibrio, fatiga, tiro con arco, marcha...)" class="w-full max-w-xl px-4 py-3 rounded-xl border border-slate-300 bg-white text-sm shadow-sm focus:outline-none focus:ring-2 focus:ring-teal-500 focus:border-teal-500">
     </div>
 
-    <!-- CASO 1: ICTUS DETALLE COMPLETO -->
-    <article id="ictus" class="mt-12 bg-white rounded-2xl border border-slate-200 p-8 shadow-sm space-y-8">
-      <div>
-        <span class="text-xs font-bold uppercase tracking-wider text-teal-600">Caso de uso</span>
-        <h3 class="text-2xl sm:text-3xl font-bold text-slate-900 mt-1">Ictus</h3>
-        <p class="text-slate-600 mt-2 text-base leading-relaxed">El ictus puede afectar movilidad, equilibrio, miembro superior, comunicación, cognición, energía y confianza para volver a moverse en comunidad.</p>
-      </div>
+    <!-- Botones de Navegación Interactiva (Tabs) -->
+    <div class="flex flex-wrap gap-2 pb-6 border-b border-slate-200" id="tabsContainer">
+      <button onclick="showTab('tab-ictus')" class="tab-btn active px-4 py-2 text-xs font-bold rounded-xl border border-slate-300 transition" data-name="ictus">Ictus</button>
+      <button onclick="showTab('tab-dca')" class="tab-btn px-4 py-2 text-xs font-bold rounded-xl border border-slate-300 bg-white text-slate-700 hover:bg-slate-100 transition" data-name="daño cerebral adquirido dca">DCA Traumático</button>
+      <button onclick="showTab('tab-paralisis')" class="tab-btn px-4 py-2 text-xs font-bold rounded-xl border border-slate-300 bg-white text-slate-700 hover:bg-slate-100 transition" data-name="parálisis cerebral">Parálisis Cerebral</button>
+      <button onclick="showTab('tab-autismo')" class="tab-btn px-4 py-2 text-xs font-bold rounded-xl border border-slate-300 bg-white text-slate-700 hover:bg-slate-100 transition" data-name="trastorno autista tea">Autismo (TEA)</button>
+      <button onclick="showTab('tab-visual')" class="tab-btn px-4 py-2 text-xs font-bold rounded-xl border border-slate-300 bg-white text-slate-700 hover:bg-slate-100 transition" data-name="discapacidad visual baja visión">Discapacidad Visual</button>
+      <button onclick="showTab('tab-trasplante')" class="tab-btn px-4 py-2 text-xs font-bold rounded-xl border border-slate-300 bg-white text-slate-700 hover:bg-slate-100 transition" data-name="trasplante hepático">Trasplante Hepático</button>
+      <button onclick="showTab('tab-ela')" class="tab-btn px-4 py-2 text-xs font-bold rounded-xl border border-slate-300 bg-white text-slate-700 hover:bg-slate-100 transition" data-name="enfermedades neurodegenerativas ela parkinson">Neurodegenerativas</button>
+      <button onclick="showTab('tab-otros')" class="tab-btn px-4 py-2 text-xs font-bold rounded-xl border border-slate-300 bg-white text-slate-700 hover:bg-slate-100 transition" data-name="otros casos de uso">Otros Casos</button>
+    </div>
 
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-        <!-- Necesidades -->
-        <div class="bg-slate-50 p-6 rounded-xl border border-slate-200 space-y-3">
-          <h4 class="font-bold text-slate-900 text-sm uppercase tracking-wide">Necesidades y barreras habituales</h4>
-          <ul class="space-y-2 text-sm text-slate-700">
-            <li class="flex items-start gap-2">• <span>Brechas entre rehabilitación sanitaria y actividad comunitaria.</span></li>
-            <li class="flex items-start gap-2">• <span>Miedo a caídas, fatiga, baja confianza y dificultad para encontrar actividades adaptadas.</span></li>
-            <li class="flex items-start gap-2">• <span>Necesidad de objetivos funcionales medidos a lo largo del tiempo.</span></li>
-          </ul>
+    <!-- CONTENEDORES DE CADA COLECTIVO -->
+    <div class="mt-8 space-y-8" id="profilesContent">
+
+      <!-- 1. ICTUS -->
+      <article id="tab-ictus" class="profile-card bg-white rounded-2xl border border-slate-200 p-8 shadow-sm space-y-8">
+        <div>
+          <span class="text-xs font-bold uppercase tracking-wider text-teal-600">Caso de uso</span>
+          <h3 class="text-2xl sm:text-3xl font-extrabold text-slate-900 mt-1">Ictus</h3>
+          <p class="text-slate-600 mt-2 text-base leading-relaxed">El ictus puede afectar movilidad, equilibrio, miembro superior, comunicación, cognición, energía y confianza para volver a moverse en comunidad.</p>
         </div>
 
-        <!-- Aportación MA Neuro -->
-        <div class="bg-slate-50 p-6 rounded-xl border border-slate-200 space-y-3">
-          <h4 class="font-bold text-slate-900 text-sm uppercase tracking-wide">Qué puede aportar Movilidad Aumentada Neuro</h4>
-          <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 text-xs text-slate-700">
-            <div class="p-2 bg-white rounded border border-slate-200"><strong>Valoración:</strong> Identificar capacidades, restricciones, riesgos y objetivos reales.</div>
-            <div class="p-2 bg-white rounded border border-slate-200"><strong>Preparación:</strong> Entrenar alcance, coordinación, equilibrio o control de tronco.</div>
-            <div class="p-2 bg-white rounded border border-slate-200"><strong>Actividad física:</strong> Convertir objetivos funcionales en propuestas concretas.</div>
-            <div class="p-2 bg-white rounded border border-slate-200"><strong>Acompañamiento:</strong> Primeras salidas y ajustes con entidad de referencia.</div>
-            <div class="p-2 bg-white rounded border border-slate-200"><strong>Tecnología:</strong> RV o tecnología interactiva como práctica adicional.</div>
-            <div class="p-2 bg-white rounded border border-slate-200"><strong>Experiencia deportiva:</strong> Probar actividades reales con criterios de seguridad.</div>
-            <div class="p-2 bg-white rounded border border-slate-200"><strong>Club:</strong> Facilitar acogida con clubes que adapten la práctica.</div>
-            <div class="p-2 bg-white rounded border border-slate-200"><strong>Seguimiento:</strong> Revisar continuidad a 3, 6 y 12 meses.</div>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <div class="bg-slate-50 p-6 rounded-xl border border-slate-200 space-y-3">
+            <h4 class="font-bold text-slate-900 text-xs uppercase tracking-wider">Necesidades y barreras habituales</h4>
+            <ul class="space-y-2 text-sm text-slate-700">
+              <li class="flex items-start gap-2">• <span>Brechas entre rehabilitación sanitaria y actividad comunitaria.</span></li>
+              <li class="flex items-start gap-2">• <span>Miedo a caídas, fatiga, baja confianza y dificultad para encontrar actividades adaptadas.</span></li>
+              <li class="flex items-start gap-2">• <span>Necesidad de objetivos funcionales medidos a lo largo del tiempo.</span></li>
+            </ul>
           </div>
-        </div>
-      </div>
 
-      <!-- Evidencia VR específica -->
-      <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 text-xs">
-        <div class="p-4 rounded-xl border border-teal-200 bg-teal-50/50">
-          <span class="font-bold text-teal-800 block text-sm mb-1">VR con respaldo</span>
-          <p class="text-slate-700">Hay evidencia clínica amplia para VR en rehabilitación postictus, sobre todo miembro superior, equilibrio y práctica motora adicional.</p>
-        </div>
-        <div class="p-4 rounded-xl border border-blue-200 bg-blue-50/50">
-          <span class="font-bold text-blue-800 block text-sm mb-1">Usos prometedores</span>
-          <p class="text-slate-700">La transferencia hacia deporte comunitario, adherencia y permanencia necesita estudios específicos.</p>
-        </div>
-        <div class="p-4 rounded-xl border border-rose-200 bg-rose-50/50">
-          <span class="font-bold text-rose-800 block text-sm mb-1">Cuándo podría no aportar valor</span>
-          <p class="text-slate-700">Puede no aportar valor si aumenta mareo, fatiga, frustración, riesgo de caída o si desplaza terapia necesaria.</p>
-        </div>
-      </div>
-
-      <!-- Referencias Científicas Originales -->
-      <div class="space-y-4">
-        <h4 class="font-bold text-slate-900 text-sm uppercase tracking-wide">Evidencia científica original</h4>
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-4 text-xs">
-          
-          <div class="p-4 bg-slate-50 rounded-xl border border-slate-200 flex flex-col justify-between">
-            <div>
-              <p class="font-bold text-slate-900 mb-1">2026 Guideline for Adult Stroke Rehabilitation and Recovery</p>
-              <p class="text-slate-500 mb-3">AHA / ASA · 2026</p>
-              <p><strong>Tipo:</strong> Guía clínica profesional</p>
-              <p><strong>Resultado principal:</strong> Refuerza rehabilitación coordinada, personalizada y mantenida con resultados funcionales y de participación.</p>
-              <p class="text-slate-500 mt-2"><strong>Limitaciones:</strong> No evalúa MA Neuro ni DynamicsVR; orienta principios generales.</p>
+          <div class="bg-slate-50 p-6 rounded-xl border border-slate-200 space-y-3">
+            <h4 class="font-bold text-slate-900 text-xs uppercase tracking-wider">Qué puede aportar Movilidad Aumentada Neuro</h4>
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-2 text-xs text-slate-700">
+              <div class="p-2.5 bg-white rounded-lg border border-slate-200"><strong>Valoración:</strong> Identificar capacidades, restricciones, riesgos y objetivos reales.</div>
+              <div class="p-2.5 bg-white rounded-lg border border-slate-200"><strong>Preparación:</strong> Entrenar alcance, coordinación, equilibrio o control de tronco.</div>
+              <div class="p-2.5 bg-white rounded-lg border border-slate-200"><strong>Actividad física:</strong> Convertir objetivos funcionales en propuestas concretas.</div>
+              <div class="p-2.5 bg-white rounded-lg border border-slate-200"><strong>Acompañamiento:</strong> Primeras salidas y ajustes con entidad de referencia.</div>
+              <div class="p-2.5 bg-white rounded-lg border border-slate-200"><strong>Tecnología:</strong> RV o tecnología interactiva como práctica adicional.</div>
+              <div class="p-2.5 bg-white rounded-lg border border-slate-200"><strong>Experiencia deportiva:</strong> Probar actividades reales con criterios de seguridad.</div>
+              <div class="p-2.5 bg-white rounded-lg border border-slate-200"><strong>Club:</strong> Facilitar acogida con clubes que adapten la práctica.</div>
+              <div class="p-2.5 bg-white rounded-lg border border-slate-200"><strong>Seguimiento:</strong> Revisar continuidad a 3, 6 y 12 meses.</div>
             </div>
-            <a href="https://professional.heart.org/en/guidelines-statements/2026-guideline-for-adult-stroke-rehabilitation-and-recovery-a-guideline-fromstr0000000000000536" target="_blank" rel="noreferrer" class="mt-4 text-teal-600 hover:underline font-semibold block">Consultar estudio original →</a>
           </div>
+        </div>
 
-          <div class="p-4 bg-slate-50 rounded-xl border border-slate-200 flex flex-col justify-between">
-            <div>
-              <p class="font-bold text-slate-900 mb-1">Can specific virtual reality combined with conventional rehabilitation improve poststroke hand motor function?</p>
-              <p class="text-slate-500 mb-3">Randomized Clinical Trial, PMC · 2023</p>
-              <p><strong>Tipo:</strong> Ensayo clínico aleatorizado (46 personas)</p>
-              <p><strong>Resultado principal:</strong> Combinación de convencional y VR mejoró función de mano y muñeca frente a terapia sola.</p>
-              <p class="text-slate-500 mt-2"><strong>Limitaciones:</strong> Muestra moderada, no mide deporte ni participación comunitaria.</p>
+        <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 text-xs">
+          <div class="p-4 rounded-xl border border-teal-200 bg-teal-50/60">
+            <span class="font-bold text-teal-900 block text-sm mb-1">VR con respaldo</span>
+            <p class="text-slate-700 leading-relaxed">Hay evidencia clínica amplia para VR en rehabilitación postictus, sobre todo miembro superior, equilibrio y práctica motora adicional.</p>
+          </div>
+          <div class="p-4 rounded-xl border border-blue-200 bg-blue-50/60">
+            <span class="font-bold text-blue-900 block text-sm mb-1">Usos prometedores</span>
+            <p class="text-slate-700 leading-relaxed">La transferencia hacia deporte comunitario, adherencia y permanencia necesita estudios específicos.</p>
+          </div>
+          <div class="p-4 rounded-xl border border-rose-200 bg-rose-50/60">
+            <span class="font-bold text-rose-900 block text-sm mb-1">Cuándo podría no aportar valor</span>
+            <p class="text-slate-700 leading-relaxed">Puede no aportar valor si aumenta mareo, fatiga, frustración, riesgo de caída o si desplaza terapia necesaria.</p>
+          </div>
+        </div>
+
+        <!-- Evidencia Científica -->
+        <div class="space-y-4">
+          <h4 class="font-bold text-slate-900 text-xs uppercase tracking-wider">Evidencia científica original</h4>
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-4 text-xs">
+            <div class="p-4 bg-slate-50 rounded-xl border border-slate-200 flex flex-col justify-between">
+              <div>
+                <p class="font-bold text-slate-900 mb-1">2026 Guideline for Adult Stroke Rehabilitation and Recovery</p>
+                <p class="text-slate-500 mb-3">AHA / ASA · 2026</p>
+                <p><strong>Tipo:</strong> Guía clínica profesional</p>
+                <p><strong>Resultado principal:</strong> Refuerza rehabilitación coordinada, personalizada y mantenida, con resultados funcionales y de participación.</p>
+                <p class="text-slate-500 mt-2"><strong>Limitaciones:</strong> No evalúa MA Neuro ni DynamicsVR; orienta principios generales.</p>
+              </div>
+              <a href="https://professional.heart.org/en/guidelines-statements/2026-guideline-for-adult-stroke-rehabilitation-and-recovery-a-guideline-fromstr0000000000000536" target="_blank" rel="noreferrer" class="mt-4 text-teal-600 hover:underline font-semibold block">Consultar estudio original →</a>
             </div>
-            <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC10071242/" target="_blank" rel="noreferrer" class="mt-4 text-teal-600 hover:underline font-semibold block">Consultar estudio original →</a>
-          </div>
 
-          <div class="p-4 bg-slate-50 rounded-xl border border-slate-200 flex flex-col justify-between">
-            <div>
-              <p class="font-bold text-slate-900 mb-1">Feasibility and efficacy of virtual reality rehabilitation for upper extremity impairment</p>
-              <p class="text-slate-500 mb-3">BMJ Open / PubMed · 2026</p>
-              <p><strong>Tipo:</strong> Ensayo clínico aleatorizado abierto (60 personas)</p>
-              <p><strong>Resultado principal:</strong> La VR no inmersiva fue factible y segura, pero no superior a fisioterapia convencional de igual intensidad.</p>
-              <p class="text-slate-500 mt-2"><strong>Limitaciones:</strong> Ensayo detenido antes del tamaño previsto.</p>
+            <div class="p-4 bg-slate-50 rounded-xl border border-slate-200 flex flex-col justify-between">
+              <div>
+                <p class="font-bold text-slate-900 mb-1">Can specific virtual reality combined with conventional rehabilitation improve poststroke hand motor function?</p>
+                <p class="text-slate-500 mb-3">Randomized Clinical Trial, PMC · 2023</p>
+                <p><strong>Tipo:</strong> Ensayo clínico aleatorizado (46 personas)</p>
+                <p><strong>Resultado principal:</strong> La combinación de rehabilitación convencional y VR específica mejoró función de mano y muñeca frente a terapia sola.</p>
+                <p class="text-slate-500 mt-2"><strong>Limitaciones:</strong> Muestra moderada; no mide deporte ni participación comunitaria.</p>
+              </div>
+              <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC10071242/" target="_blank" rel="noreferrer" class="mt-4 text-teal-600 hover:underline font-semibold block">Consultar estudio original →</a>
             </div>
-            <a href="https://pubmed.ncbi.nlm.nih.gov/41708162/" target="_blank" rel="noreferrer" class="mt-4 text-teal-600 hover:underline font-semibold block">Consultar estudio original →</a>
+
+            <div class="p-4 bg-slate-50 rounded-xl border border-slate-200 flex flex-col justify-between">
+              <div>
+                <p class="font-bold text-slate-900 mb-1">Feasibility and efficacy of virtual reality rehabilitation for upper extremity impairment</p>
+                <p class="text-slate-500 mb-3">BMJ Open / PubMed · 2026</p>
+                <p><strong>Tipo:</strong> Ensayo clínico aleatorizado abierto (60 personas)</p>
+                <p><strong>Resultado principal:</strong> La VR no inmersiva fue factible y segura, pero no superior a fisioterapia convencional de igual intensidad.</p>
+                <p class="text-slate-500 mt-2"><strong>Limitaciones:</strong> Ensayo detenido antes del tamaño previsto.</p>
+              </div>
+              <a href="https://pubmed.ncbi.nlm.nih.gov/41708162/" target="_blank" rel="noreferrer" class="mt-4 text-teal-600 hover:underline font-semibold block">Consultar estudio original →</a>
+            </div>
+          </div>
+          <div class="pt-2">
+            <a href="https://www.dynamics-vr.com/evidencia-cientifica/" target="_blank" rel="noreferrer" class="text-xs text-teal-700 hover:underline font-semibold">Más evidencia científica en Dynamics VR →</a>
+          </div>
+        </div>
+
+        <div class="bg-slate-50 p-4 rounded-xl border border-slate-200">
+          <span class="text-xs font-bold text-slate-700 block mb-2">QUÉ PODRÍA ESTUDIAR MA NEURO:</span>
+          <div class="flex flex-wrap gap-2 text-xs text-slate-600">
+            <span class="bg-white px-2.5 py-1 rounded-md border border-slate-200">transferencia desde entrenamiento a actividad real</span>
+            <span class="bg-white px-2.5 py-1 rounded-md border border-slate-200">motivación</span>
+            <span class="bg-white px-2.5 py-1 rounded-md border border-slate-200">adherencia</span>
+            <span class="bg-white px-2.5 py-1 rounded-md border border-slate-200">autonomía</span>
+            <span class="bg-white px-2.5 py-1 rounded-md border border-slate-200">incorporación a clubes</span>
+            <span class="bg-white px-2.5 py-1 rounded-md border border-slate-200">permanencia a 3, 6 y 12 meses</span>
+            <span class="bg-white px-2.5 py-1 rounded-md border border-slate-200">barreras y facilitadores</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- 2. DCA TRAUMÁTICO -->
+      <article id="tab-dca" class="profile-card hidden bg-white rounded-2xl border border-slate-200 p-8 shadow-sm space-y-8">
+        <div>
+          <span class="text-xs font-bold uppercase tracking-wider text-teal-600">Caso de uso</span>
+          <h3 class="text-2xl sm:text-3xl font-extrabold text-slate-900 mt-1">Daño cerebral adquirido traumático</h3>
+          <p class="text-slate-600 mt-2 text-base leading-relaxed">El DCA traumático puede combinar dificultades motoras, cognitivas, emocionales y de autorregulación que afectan la vuelta a actividades significativas.</p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <div class="bg-slate-50 p-6 rounded-xl border border-slate-200 space-y-3">
+            <h4 class="font-bold text-slate-900 text-xs uppercase tracking-wider">Necesidades y barreras habituales</h4>
+            <ul class="space-y-2 text-sm text-slate-700">
+              <li class="flex items-start gap-2">• <span>Entornos deportivos con muchos estímulos y demandas de planificación.</span></li>
+              <li class="flex items-start gap-2">• <span>Fatiga, cambios atencionales, inseguridad y necesidad de apoyos graduales.</span></li>
+              <li class="flex items-start gap-2">• <span>Escasa evidencia específica sobre transferencia directa de clínica a club.</span></li>
+            </ul>
           </div>
 
+          <div class="bg-slate-50 p-6 rounded-xl border border-slate-200 space-y-3">
+            <h4 class="font-bold text-slate-900 text-xs uppercase tracking-wider">Aportación del programa</h4>
+            <p class="text-sm text-slate-700 leading-relaxed">MA Neuro ayuda a diseñar una transición estructurada: valoración de tolerancias sensoriales y físicas, práctica protegida y enlace seguro con monitores deportivos formados.</p>
+          </div>
         </div>
-        <div class="pt-2">
-          <a href="https://www.dynamics-vr.com/evidencia-cientifica/" target="_blank" rel="noreferrer" class="text-xs text-teal-700 hover:underline font-medium">Más evidencia científica en Dynamics VR →</a>
+      </article>
+
+      <!-- 3. PARÁLISIS CEREBRAL -->
+      <article id="tab-paralisis" class="profile-card hidden bg-white rounded-2xl border border-slate-200 p-8 shadow-sm space-y-8">
+        <div>
+          <span class="text-xs font-bold uppercase tracking-wider text-teal-600">Caso de uso</span>
+          <h3 class="text-2xl sm:text-3xl font-extrabold text-slate-900 mt-1">Parálisis cerebral</h3>
+          <p class="text-slate-600 mt-2 text-base leading-relaxed">La parálisis cerebral incluye perfiles motores muy diversos. La actividad física puede requerir apoyos para equilibrio, coordinación, movilidad, autonomía y confianza.</p>
         </div>
-      </div>
 
-      <!-- Qué podría estudiar MA Neuro -->
-      <div class="bg-slate-50 p-4 rounded-xl border border-slate-200">
-        <span class="text-xs font-bold text-slate-700 block mb-2">QUÉ PODRÍA ESTUDIAR MA NEURO:</span>
-        <div class="flex flex-wrap gap-2 text-xs text-slate-600">
-          <span class="bg-white px-2.5 py-1 rounded border border-slate-200">transferencia desde entrenamiento a actividad real</span>
-          <span class="bg-white px-2.5 py-1 rounded border border-slate-200">motivación</span>
-          <span class="bg-white px-2.5 py-1 rounded border border-slate-200">adherencia</span>
-          <span class="bg-white px-2.5 py-1 rounded border border-slate-200">autonomía</span>
-          <span class="bg-white px-2.5 py-1 rounded border border-slate-200">incorporación a clubes</span>
-          <span class="bg-white px-2.5 py-1 rounded border border-slate-200">permanencia a 3, 6 y 12 meses</span>
-          <span class="bg-white px-2.5 py-1 rounded border border-slate-200">barreras y facilitadores</span>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <div class="bg-slate-50 p-6 rounded-xl border border-slate-200 space-y-3">
+            <h4 class="font-bold text-slate-900 text-xs uppercase tracking-wider">Necesidades y barreras habituales</h4>
+            <ul class="space-y-2 text-sm text-slate-700">
+              <li class="flex items-start gap-2">• <span>Barreras de accesibilidad en instalaciones y material deportivo adaptado.</span></li>
+              <li class="flex items-start gap-2">• <span>Desconocimiento en clubes convencionales sobre cómo adaptar la práctica.</span></li>
+              <li class="flex items-start gap-2">• <span>Necesidad de sostener el acondicionamiento para preservar la autonomía funcional.</span></li>
+            </ul>
+          </div>
+
+          <div class="bg-slate-50 p-6 rounded-xl border border-slate-200 space-y-3">
+            <h4 class="font-bold text-slate-900 text-xs uppercase tracking-wider">Aportación del programa</h4>
+            <p class="text-sm text-slate-700 leading-relaxed">Facilita el acceso a modalidades con excelente transferencia e inclusión (como tiro con arco adaptado, cornhole o piragüismo) bajo supervisión y apoyos técnicos adecuados.</p>
+          </div>
         </div>
-      </div>
-    </article>
+      </article>
 
-    <!-- RESUMEN RESTO DE PERFILES -->
-    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-8">
-      <div id="dca-traumatico" class="bg-white p-6 rounded-xl border border-slate-200 shadow-sm space-y-3">
-        <h4 class="font-bold text-slate-900">Daño cerebral adquirido traumático</h4>
-        <p class="text-xs text-slate-600 leading-relaxed">El DCA traumático puede combinar dificultades motoras, cognitivas, emocionales y de autorregulación que afectan la vuelta a actividades significativas.</p>
-      </div>
+      <!-- 4. AUTISMO (TEA) -->
+      <article id="tab-autismo" class="profile-card hidden bg-white rounded-2xl border border-slate-200 p-8 shadow-sm space-y-8">
+        <div>
+          <span class="text-xs font-bold uppercase tracking-wider text-teal-600">Caso de uso</span>
+          <h3 class="text-2xl sm:text-3xl font-extrabold text-slate-900 mt-1">Trastorno del espectro autista</h3>
+          <p class="text-slate-600 mt-2 text-base leading-relaxed">En el trastorno del espectro autista, la actividad física puede estar condicionada por perfil sensorial, predictibilidad del entorno, comunicación, ansiedad, intereses y apoyos disponibles.</p>
+        </div>
 
-      <div id="paralisis-cerebral" class="bg-white p-6 rounded-xl border border-slate-200 shadow-sm space-y-3">
-        <h4 class="font-bold text-slate-900">Parálisis cerebral</h4>
-        <p class="text-xs text-slate-600 leading-relaxed">La parálisis cerebral incluye perfiles motores muy diversos. La actividad física puede requerir apoyos para equilibrio, coordinación, movilidad, autonomía y confianza.</p>
-      </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <div class="bg-slate-50 p-6 rounded-xl border border-slate-200 space-y-3">
+            <h4 class="font-bold text-slate-900 text-xs uppercase tracking-wider">Necesidades y barreras habituales</h4>
+            <ul class="space-y-2 text-sm text-slate-700">
+              <li class="flex items-start gap-2">• <span>Sobrecarga sensorial en entornos ruidosos o poco estructurados.</span></li>
+              <li class="flex items-start gap-2">• <span>Falta de anticipación en las rutinas de los entrenamientos grupales.</span></li>
+            </ul>
+          </div>
 
-      <div id="autismo" class="bg-white p-6 rounded-xl border border-slate-200 shadow-sm space-y-3">
-        <h4 class="font-bold text-slate-900">Trastorno del espectro autista</h4>
-        <p class="text-xs text-slate-600 leading-relaxed">En el trastorno del espectro autista, la actividad física puede estar condicionada por perfil sensorial, predictibilidad del entorno, comunicación, ansiedad, intereses y apoyos disponibles.</p>
-      </div>
+          <div class="bg-slate-50 p-6 rounded-xl border border-slate-200 space-y-3">
+            <h4 class="font-bold text-slate-900 text-xs uppercase tracking-wider">Aportación del programa</h4>
+            <p class="text-sm text-slate-700 leading-relaxed">Estructura entornos predecibles, respeta el perfil sensorial y utiliza actividades individuales o de baja demanda caótica como iniciación hacia el deporte compartido.</p>
+          </div>
+        </div>
+      </article>
 
-      <div id="discapacidad-visual" class="bg-white p-6 rounded-xl border border-slate-200 shadow-sm space-y-3">
-        <h4 class="font-bold text-slate-900">Discapacidad visual y baja visión</h4>
-        <p class="text-xs text-slate-600 leading-relaxed">La baja visión y la discapacidad visual pueden limitar orientación, desplazamiento, lectura del entorno, confianza y acceso a actividad física segura.</p>
-      </div>
+      <!-- 5. DISCAPACIDAD VISUAL -->
+      <article id="tab-visual" class="profile-card hidden bg-white rounded-2xl border border-slate-200 p-8 shadow-sm space-y-8">
+        <div>
+          <span class="text-xs font-bold uppercase tracking-wider text-teal-600">Caso de uso</span>
+          <h3 class="text-2xl sm:text-3xl font-extrabold text-slate-900 mt-1">Discapacidad visual y baja visión</h3>
+          <p class="text-slate-600 mt-2 text-base leading-relaxed">La baja visión y la discapacidad visual pueden limitar orientación, desplazamiento, lectura del entorno, confianza y acceso a actividad física segura.</p>
+        </div>
 
-      <div id="trasplante-hepatico" class="bg-white p-6 rounded-xl border border-slate-200 shadow-sm space-y-3">
-        <h4 class="font-bold text-slate-900">Trasplante hepático</h4>
-        <p class="text-xs text-slate-600 leading-relaxed">Tras un trasplante hepático pueden persistir fragilidad, baja capacidad física, miedo al esfuerzo y dificultades para retomar actividad estable.</p>
-      </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <div class="bg-slate-50 p-6 rounded-xl border border-slate-200 space-y-3">
+            <h4 class="font-bold text-slate-900 text-xs uppercase tracking-wider">Necesidades y barreras habituales</h4>
+            <ul class="space-y-2 text-sm text-slate-700">
+              <li class="flex items-start gap-2">• <span>Miedo a impactos o tropiezos en espacios abiertos no adaptados.</span></li>
+              <li class="flex items-start gap-2">• <span>Dificultades de guía y acompañamiento especializado.</span></li>
+            </ul>
+          </div>
 
-      <div id="ela" class="bg-white p-6 rounded-xl border border-slate-200 shadow-sm space-y-3">
-        <h4 class="font-bold text-slate-900">Enfermedades neurodegenerativas</h4>
-        <p class="text-xs text-slate-600 leading-relaxed">En enfermedades neurodegenerativas como ELA, Parkinson u otros procesos progresivos, la prioridad es sostener participación, autonomía posible, calidad de vida y adaptación a los cambios funcionales.</p>
-      </div>
+          <div class="bg-slate-50 p-6 rounded-xl border border-slate-200 space-y-3">
+            <h4 class="font-bold text-slate-900 text-xs uppercase tracking-wider">Aportación del programa</h4>
+            <p class="text-sm text-slate-700 leading-relaxed">Proporciona acompañamiento individualizado, señalización háptica o auditiva y vinculación con actividades adaptadas (senderismo guiado, tiro adaptado con miras táctiles/auditivas).</p>
+          </div>
+        </div>
+      </article>
 
-      <div id="otros-colectivos" class="bg-white p-6 rounded-xl border border-slate-200 shadow-sm space-y-3 md:col-span-2 lg:col-span-3">
-        <h4 class="font-bold text-slate-900">Otros casos de uso</h4>
-        <p class="text-xs text-slate-600 leading-relaxed">MA Neuro puede explorar otros casos de uso cuando exista una pregunta clara, una valoración profesional adecuada y evidencia específica sobre el objetivo que se quiere mejorar.</p>
-      </div>
+      <!-- 6. TRASPLANTE HEPÁTICO -->
+      <article id="tab-trasplante" class="profile-card hidden bg-white rounded-2xl border border-slate-200 p-8 shadow-sm space-y-8">
+        <div>
+          <span class="text-xs font-bold uppercase tracking-wider text-teal-600">Caso de uso</span>
+          <h3 class="text-2xl sm:text-3xl font-extrabold text-slate-900 mt-1">Trasplante hepático</h3>
+          <p class="text-slate-600 mt-2 text-base leading-relaxed">Tras un trasplante hepático pueden persistir fragilidad, baja capacidad física, miedo al esfuerzo y dificultades para retomar actividad estable.</p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <div class="bg-slate-50 p-6 rounded-xl border border-slate-200 space-y-3">
+            <h4 class="font-bold text-slate-900 text-xs uppercase tracking-wider">Necesidades y barreras habituales</h4>
+            <ul class="space-y-2 text-sm text-slate-700">
+              <li class="flex items-start gap-2">• <span>Sarcopenia, fragilidad y desacondicionamiento físico prolongado.</span></li>
+              <li class="flex items-start gap-2">• <span>Miedo de la persona y de la familia al esfuerzo de intensidad moderada.</span></li>
+            </ul>
+          </div>
+
+          <div class="bg-slate-50 p-6 rounded-xl border border-slate-200 space-y-3">
+            <h4 class="font-bold text-slate-900 text-xs uppercase tracking-wider">Aportación del programa</h4>
+            <p class="text-sm text-slate-700 leading-relaxed">Monitorización de la tolerancia al esfuerzo y progresión milimétrica hacia actividades de bajo impacto cardiovascular y articular en entornos amables.</p>
+          </div>
+        </div>
+      </article>
+
+      <!-- 7. ENFERMEDADES NEURODEGENERATIVAS -->
+      <article id="tab-ela" class="profile-card hidden bg-white rounded-2xl border border-slate-200 p-8 shadow-sm space-y-8">
+        <div>
+          <span class="text-xs font-bold uppercase tracking-wider text-teal-600">Caso de uso</span>
+          <h3 class="text-2xl sm:text-3xl font-extrabold text-slate-900 mt-1">Enfermedades neurodegenerativas (ELA, Parkinson...)</h3>
+          <p class="text-slate-600 mt-2 text-base leading-relaxed">En enfermedades neurodegenerativas como ELA, Parkinson u otros procesos progresivos, la prioridad es sostener participación, autonomía posible, calidad de vida y adaptación a los cambios funcionales.</p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <div class="bg-slate-50 p-6 rounded-xl border border-slate-200 space-y-3">
+            <h4 class="font-bold text-slate-900 text-xs uppercase tracking-wider">Necesidades y barreras habituales</h4>
+            <ul class="space-y-2 text-sm text-slate-700">
+              <li class="flex items-start gap-2">• <span>Evolución funcional cambiante que exige revisiones periódicas continuas.</span></li>
+              <li class="flex items-start gap-2">• <span>Aislamiento social progresivo a medida que se reduce la movilidad independiente.</span></li>
+            </ul>
+          </div>
+
+          <div class="bg-slate-50 p-6 rounded-xl border border-slate-200 space-y-3">
+            <h4 class="font-bold text-slate-900 text-xs uppercase tracking-wider">Aportación del programa</h4>
+            <p class="text-sm text-slate-700 leading-relaxed">Mantiene el vínculo comunitario y social a través del club deportivo con tareas ajustadas al momento evolutivo de cada persona, primando siempre la fatiga controlada.</p>
+          </div>
+        </div>
+      </article>
+
+      <!-- 8. OTROS CASOS -->
+      <article id="tab-otros" class="profile-card hidden bg-white rounded-2xl border border-slate-200 p-8 shadow-sm space-y-8">
+        <div>
+          <span class="text-xs font-bold uppercase tracking-wider text-teal-600">Caso de uso</span>
+          <h3 class="text-2xl sm:text-3xl font-extrabold text-slate-900 mt-1">Otros casos de uso</h3>
+          <p class="text-slate-600 mt-2 text-base leading-relaxed">MA Neuro puede explorar otros casos de uso cuando exista una pregunta clara, una valoración profesional adecuada y evidencia específica sobre el objetivo que se quiere mejorar.</p>
+        </div>
+      </article>
+
     </div>
   </section>
 
   <!-- PIE DE PÁGINA -->
   <footer class="bg-slate-900 text-slate-400 py-12 border-t border-slate-800 text-xs">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row justify-between items-center gap-4">
-      <p>© Movilidad Aumentada Neuro. Programa de transición a actividad física y deporte.</p>
-      <div class="flex gap-4">
-        <a href="#portada" class="hover:text-white transition">Volver arriba</a>
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row justify-between items-center gap-6">
+      <div class="flex items-center gap-3">
+        <img src="https://movilidad-aumentada-neuro-evidencia.jlvillamord.chatgpt.site/assets/logo-ma-neuro.png" alt="Logo MA Neuro" class="h-8 w-auto grayscale brightness-200">
+        <p>© Movilidad Aumentada Neuro. Programa de transición a actividad física y deporte.</p>
+      </div>
+      <div class="flex gap-6 font-medium">
+        <a href="#portada" class="hover:text-white transition">Volver arriba ↑</a>
         <a href="https://www.dynamics-vr.com/" target="_blank" rel="noreferrer" class="hover:text-white transition">Dynamics VR</a>
+        <a href="https://www.dynamics-vr.com/blog-de-fisioterapia-dynamics-vr/" target="_blank" rel="noreferrer" class="hover:text-white transition">Blog Clínico</a>
       </div>
     </div>
   </footer>
 
+  <!-- SCRIPT DE INTERACTIVIDAD DINÁMICA -->
+  <script>
+    function showTab(tabId) {
+      document.querySelectorAll('.profile-card').forEach(card => card.classList.add('hidden'));
+      document.querySelectorAll('.tab-btn').forEach(btn => btn.classList.remove('active', 'bg-slate-900', 'text-white'));
+      
+      const targetCard = document.getElementById(tabId);
+      if (targetCard) targetCard.classList.remove('hidden');
+
+      const activeBtn = Array.from(document.querySelectorAll('.tab-btn')).find(b => b.getAttribute('onclick').includes(tabId));
+      if (activeBtn) {
+        activeBtn.classList.add('active', 'bg-slate-900', 'text-white');
+      }
+    }
+
+    function filterProfiles() {
+      const q = document.getElementById('filterInput').value.toLowerCase();
+      const buttons = document.querySelectorAll('.tab-btn');
+      buttons.forEach(btn => {
+        const text = btn.getAttribute('data-name') || '';
+        if (text.toLowerCase().includes(q)) {
+          btn.style.display = 'inline-block';
+        } else {
+          btn.style.display = 'none';
+        }
+      });
+    }
+  </script>
 </body>
 </html>
