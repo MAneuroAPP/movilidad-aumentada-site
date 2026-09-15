@@ -9,7 +9,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <style>
-    html { font-size: 18px; } /* Escala base aumentada */
+    html { font-size: 18px; scroll-padding-top: 7rem; }
     body { font-family: 'Plus Jakarta Sans', sans-serif; }
     .tab-btn.active {
       background-color: #0f172a;
@@ -50,7 +50,7 @@
   <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-12 pb-24 space-y-20">
     
     <!-- 1. PRESENTACIÓN INSTITUCIONAL -->
-    <section id="portada" class="space-y-8">
+    <section id="portada" class="scroll-mt-28 space-y-8">
       <div class="inline-flex items-center gap-2 px-4 py-2 bg-teal-50 text-teal-800 text-sm font-bold rounded-full uppercase tracking-wider border border-teal-200">
         Programa de transición a actividad física y deporte
       </div>
@@ -147,7 +147,7 @@
     </section>
 
     <!-- 4. CLUBES DEPORTIVOS -->
-    <section id="clubes-deportivos" class="bg-white rounded-3xl border border-slate-200 p-8 sm:p-12 shadow-sm space-y-8">
+    <section id="clubes-deportivos" class="scroll-mt-28 bg-white rounded-3xl border border-slate-200 p-8 sm:p-12 shadow-sm space-y-8">
       <div class="max-w-3xl">
         <span class="text-xs sm:text-sm font-bold uppercase tracking-wider text-teal-600 bg-teal-50 px-3.5 py-1.5 rounded-full border border-teal-200">Clubes deportivos</span>
         <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 mt-2">Actividades para primeras experiencias reales</h2>
@@ -168,12 +168,11 @@
       </div>
     </section>
 
-    <!-- 5. CÓMO FUNCIONA EL PROGRAMA -->
-    <section id="como-funciona" class="space-y-8">
+    <!-- 5. CÓMO FUNCIONA EL PROGRAMA (FRASE ELIMINADA DIRECTAMENTE DEBAJO DEL TÍTULO) -->
+    <section id="como-funciona" class="scroll-mt-28 space-y-8">
       <div class="max-w-3xl">
         <span class="text-xs sm:text-sm font-bold uppercase tracking-wider text-teal-600 bg-teal-50 px-3.5 py-1.5 rounded-full border border-teal-200">Cómo funciona MA Neuro</span>
         <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 mt-2">Del primer contacto a la participación sostenida</h2>
-        <p class="text-slate-600 mt-2 text-lg sm:text-xl leading-relaxed">La realidad virtual se utiliza únicamente cuando aporta valor al participante. Una persona puede recorrer el programa completo sin utilizar realidad virtual.</p>
       </div>
 
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -217,7 +216,7 @@
     </section>
 
     <!-- 6. QUÉ NO AFIRMAMOS -->
-    <section id="que-no-afirmamos" class="bg-amber-50/80 border border-amber-200 rounded-3xl p-8 sm:p-12 space-y-6">
+    <section id="que-no-afirmamos" class="scroll-mt-28 bg-amber-50/80 border border-amber-200 rounded-3xl p-8 sm:p-12 space-y-6">
       <div class="max-w-3xl">
         <span class="text-xs sm:text-sm font-bold uppercase tracking-wider text-amber-800 bg-amber-100 px-3.5 py-1.5 rounded-full border border-amber-300">Criterio Ético y Deontológico</span>
         <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 mt-2">Qué no afirmamos</h2>
@@ -247,7 +246,7 @@
     </section>
 
     <!-- 7. SECCIÓN DINÁMICA DE COLECTIVOS Y CASOS DE USO -->
-    <section id="colectivos" class="space-y-8 pt-4">
+    <section id="colectivos" class="scroll-mt-28 space-y-8 pt-4">
       <div class="max-w-3xl">
         <span class="text-xs sm:text-sm font-bold uppercase tracking-wider text-teal-600 bg-teal-50 px-3.5 py-1.5 rounded-full border border-teal-200">Evidencia por colectivos</span>
         <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 mt-2">Consulta cada perfil con la misma estructura</h2>
@@ -276,22 +275,11 @@
 
         <!-- 1. ICTUS -->
         <article id="tab-ictus" class="profile-card bg-white rounded-3xl border border-slate-200 p-8 sm:p-12 shadow-sm space-y-8">
-          <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-6 border-b border-slate-100 pb-6">
-            <div>
-              <span class="text-xs sm:text-sm font-bold uppercase tracking-wider text-teal-600 bg-teal-50 px-3.5 py-1.5 rounded-full border border-teal-200">Caso de uso</span>
-              <h3 class="text-3xl sm:text-4xl font-extrabold text-slate-900 mt-2">Ictus</h3>
-            </div>
-            <div class="flex flex-wrap gap-3">
-              <a href="https://www.dynamics-vr.com/evidencia-cientifica/" target="_blank" rel="noreferrer" class="inline-flex items-center gap-1.5 px-5 py-2.5 bg-teal-50 hover:bg-teal-100 text-teal-800 text-sm sm:text-base font-bold rounded-xl border border-teal-200 transition">
-                Estudios Científicos →
-              </a>
-              <a href="https://www.dynamics-vr.com/blog-de-fisioterapia-dynamics-vr/" target="_blank" rel="noreferrer" class="inline-flex items-center gap-1.5 px-5 py-2.5 bg-slate-100 hover:bg-slate-200 text-slate-800 text-sm sm:text-base font-bold rounded-xl border border-slate-200 transition">
-                Artículos Dynamics VR →
-              </a>
-            </div>
+          <div>
+            <span class="text-xs sm:text-sm font-bold uppercase tracking-wider text-teal-600 bg-teal-50 px-3.5 py-1.5 rounded-full border border-teal-200">Caso de uso</span>
+            <h3 class="text-3xl sm:text-4xl font-extrabold text-slate-900 mt-2">Ictus</h3>
+            <p class="text-xl text-slate-600 leading-relaxed mt-3">El ictus puede afectar movilidad, equilibrio, miembro superior, comunicación, cognición, energía y confianza para volver a moverse en comunidad.</p>
           </div>
-
-          <p class="text-xl text-slate-600 leading-relaxed">El ictus puede afectar movilidad, equilibrio, miembro superior, comunicación, cognición, energía y confianza para volver a moverse en comunidad.</p>
 
           <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
             <div class="bg-slate-50 p-6 sm:p-8 rounded-2xl border border-slate-200 space-y-4">
@@ -368,26 +356,25 @@
               </div>
             </div>
           </div>
+
+          <!-- BOTONES DE RECURSOS AL PIE DEL CASO -->
+          <div class="pt-4 border-t border-slate-200 flex flex-wrap gap-4 items-center">
+            <a href="https://www.dynamics-vr.com/blog-de-fisioterapia-dynamics-vr/" target="_blank" rel="noreferrer" class="px-6 py-3 bg-slate-900 hover:bg-slate-800 text-white font-bold rounded-xl text-base transition shadow-sm">
+              Más artículos en Dynamics VR →
+            </a>
+            <a href="https://www.dynamics-vr.com/evidencia-cientifica/" target="_blank" rel="noreferrer" class="px-6 py-3 bg-teal-50 hover:bg-teal-100 text-teal-900 font-bold rounded-xl text-base border border-teal-200 transition">
+              Más evidencia científica en Dynamics VR →
+            </a>
+          </div>
         </article>
 
         <!-- 2. DCA TRAUMÁTICO -->
         <article id="tab-dca" class="profile-card hidden bg-white rounded-3xl border border-slate-200 p-8 sm:p-12 shadow-sm space-y-8">
-          <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-6 border-b border-slate-100 pb-6">
-            <div>
-              <span class="text-xs sm:text-sm font-bold uppercase tracking-wider text-teal-600 bg-teal-50 px-3.5 py-1.5 rounded-full border border-teal-200">Caso de uso</span>
-              <h3 class="text-3xl sm:text-4xl font-extrabold text-slate-900 mt-2">Daño cerebral adquirido traumático</h3>
-            </div>
-            <div class="flex flex-wrap gap-3">
-              <a href="https://pubmed.ncbi.nlm.nih.gov/?term=virtual+reality+traumatic+brain+injury+rehabilitation" target="_blank" rel="noreferrer" class="inline-flex items-center gap-1.5 px-5 py-2.5 bg-teal-50 hover:bg-teal-100 text-teal-800 text-sm sm:text-base font-bold rounded-xl border border-teal-200 transition">
-                Estudios Científicos →
-              </a>
-              <a href="https://www.dynamics-vr.com/blog-de-fisioterapia-dynamics-vr/" target="_blank" rel="noreferrer" class="inline-flex items-center gap-1.5 px-5 py-2.5 bg-slate-100 hover:bg-slate-200 text-slate-800 text-sm sm:text-base font-bold rounded-xl border border-slate-200 transition">
-                Artículos Dynamics VR →
-              </a>
-            </div>
+          <div>
+            <span class="text-xs sm:text-sm font-bold uppercase tracking-wider text-teal-600 bg-teal-50 px-3.5 py-1.5 rounded-full border border-teal-200">Caso de uso</span>
+            <h3 class="text-3xl sm:text-4xl font-extrabold text-slate-900 mt-2">Daño cerebral adquirido traumático</h3>
+            <p class="text-xl text-slate-600 leading-relaxed mt-3">El DCA traumático puede combinar dificultades motoras, cognitivas, emocionales y de autorregulación que afectan la vuelta a actividades significativas.</p>
           </div>
-
-          <p class="text-xl text-slate-600 leading-relaxed">El DCA traumático puede combinar dificultades motoras, cognitivas, emocionales y de autorregulación que afectan la vuelta a actividades significativas.</p>
 
           <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
             <div class="bg-slate-50 p-6 sm:p-8 rounded-2xl border border-slate-200 space-y-4">
@@ -413,26 +400,25 @@
             </div>
             <a href="https://pubmed.ncbi.nlm.nih.gov/?term=virtual+reality+traumatic+brain+injury+rehabilitation" target="_blank" rel="noreferrer" class="mt-4 text-teal-700 hover:underline font-bold block">Consultar evidencia en PubMed →</a>
           </div>
+
+          <!-- BOTONES DE RECURSOS AL PIE DEL CASO -->
+          <div class="pt-4 border-t border-slate-200 flex flex-wrap gap-4 items-center">
+            <a href="https://www.dynamics-vr.com/blog-de-fisioterapia-dynamics-vr/" target="_blank" rel="noreferrer" class="px-6 py-3 bg-slate-900 hover:bg-slate-800 text-white font-bold rounded-xl text-base transition shadow-sm">
+              Más artículos en Dynamics VR →
+            </a>
+            <a href="https://www.dynamics-vr.com/evidencia-cientifica/" target="_blank" rel="noreferrer" class="px-6 py-3 bg-teal-50 hover:bg-teal-100 text-teal-900 font-bold rounded-xl text-base border border-teal-200 transition">
+              Más evidencia científica en Dynamics VR →
+            </a>
+          </div>
         </article>
 
         <!-- 3. PARÁLISIS CEREBRAL -->
         <article id="tab-paralisis" class="profile-card hidden bg-white rounded-3xl border border-slate-200 p-8 sm:p-12 shadow-sm space-y-8">
-          <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-6 border-b border-slate-100 pb-6">
-            <div>
-              <span class="text-xs sm:text-sm font-bold uppercase tracking-wider text-teal-600 bg-teal-50 px-3.5 py-1.5 rounded-full border border-teal-200">Caso de uso</span>
-              <h3 class="text-3xl sm:text-4xl font-extrabold text-slate-900 mt-2">Parálisis cerebral</h3>
-            </div>
-            <div class="flex flex-wrap gap-3">
-              <a href="https://pubmed.ncbi.nlm.nih.gov/?term=virtual+reality+balance+cerebral+palsy+meta-analysis" target="_blank" rel="noreferrer" class="inline-flex items-center gap-1.5 px-5 py-2.5 bg-teal-50 hover:bg-teal-100 text-teal-800 text-sm sm:text-base font-bold rounded-xl border border-teal-200 transition">
-                Estudios Científicos →
-              </a>
-              <a href="https://www.dynamics-vr.com/blog-de-fisioterapia-dynamics-vr/" target="_blank" rel="noreferrer" class="inline-flex items-center gap-1.5 px-5 py-2.5 bg-slate-100 hover:bg-slate-200 text-slate-800 text-sm sm:text-base font-bold rounded-xl border border-slate-200 transition">
-                Artículos Dynamics VR →
-              </a>
-            </div>
+          <div>
+            <span class="text-xs sm:text-sm font-bold uppercase tracking-wider text-teal-600 bg-teal-50 px-3.5 py-1.5 rounded-full border border-teal-200">Caso de uso</span>
+            <h3 class="text-3xl sm:text-4xl font-extrabold text-slate-900 mt-2">Parálisis cerebral</h3>
+            <p class="text-xl text-slate-600 leading-relaxed mt-3">La parálisis cerebral incluye perfiles motores muy diversos. La actividad física puede requerir apoyos para equilibrio, coordinación, movilidad, autonomía y confianza.</p>
           </div>
-
-          <p class="text-xl text-slate-600 leading-relaxed">La parálisis cerebral incluye perfiles motores muy diversos. La actividad física puede requerir apoyos para equilibrio, coordinación, movilidad, autonomía y confianza.</p>
 
           <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
             <div class="bg-slate-50 p-6 sm:p-8 rounded-2xl border border-slate-200 space-y-4">
@@ -458,26 +444,25 @@
             </div>
             <a href="https://pubmed.ncbi.nlm.nih.gov/?term=virtual+reality+balance+cerebral+palsy+meta-analysis" target="_blank" rel="noreferrer" class="mt-4 text-teal-700 hover:underline font-bold block">Consultar meta-análisis en PubMed →</a>
           </div>
+
+          <!-- BOTONES DE RECURSOS AL PIE DEL CASO -->
+          <div class="pt-4 border-t border-slate-200 flex flex-wrap gap-4 items-center">
+            <a href="https://www.dynamics-vr.com/blog-de-fisioterapia-dynamics-vr/" target="_blank" rel="noreferrer" class="px-6 py-3 bg-slate-900 hover:bg-slate-800 text-white font-bold rounded-xl text-base transition shadow-sm">
+              Más artículos en Dynamics VR →
+            </a>
+            <a href="https://www.dynamics-vr.com/evidencia-cientifica/" target="_blank" rel="noreferrer" class="px-6 py-3 bg-teal-50 hover:bg-teal-100 text-teal-900 font-bold rounded-xl text-base border border-teal-200 transition">
+              Más evidencia científica en Dynamics VR →
+            </a>
+          </div>
         </article>
 
         <!-- 4. AUTISMO (TEA) -->
         <article id="tab-autismo" class="profile-card hidden bg-white rounded-3xl border border-slate-200 p-8 sm:p-12 shadow-sm space-y-8">
-          <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-6 border-b border-slate-100 pb-6">
-            <div>
-              <span class="text-xs sm:text-sm font-bold uppercase tracking-wider text-teal-600 bg-teal-50 px-3.5 py-1.5 rounded-full border border-teal-200">Caso de uso</span>
-              <h3 class="text-3xl sm:text-4xl font-extrabold text-slate-900 mt-2">Trastorno del espectro autista (TEA)</h3>
-            </div>
-            <div class="flex flex-wrap gap-3">
-              <a href="https://www.dynamics-vr.com/evidencia-cientifica/" target="_blank" rel="noreferrer" class="inline-flex items-center gap-1.5 px-5 py-2.5 bg-teal-50 hover:bg-teal-100 text-teal-800 text-sm sm:text-base font-bold rounded-xl border border-teal-200 transition">
-                Estudios Científicos →
-              </a>
-              <a href="https://www.dynamics-vr.com/blog-de-fisioterapia-dynamics-vr/" target="_blank" rel="noreferrer" class="inline-flex items-center gap-1.5 px-5 py-2.5 bg-slate-100 hover:bg-slate-200 text-slate-800 text-sm sm:text-base font-bold rounded-xl border border-slate-200 transition">
-                Artículos Dynamics VR →
-              </a>
-            </div>
+          <div>
+            <span class="text-xs sm:text-sm font-bold uppercase tracking-wider text-teal-600 bg-teal-50 px-3.5 py-1.5 rounded-full border border-teal-200">Caso de uso</span>
+            <h3 class="text-3xl sm:text-4xl font-extrabold text-slate-900 mt-2">Trastorno del espectro autista (TEA)</h3>
+            <p class="text-xl text-slate-600 leading-relaxed mt-3">En el trastorno del espectro autista, la actividad física puede estar condicionada por perfil sensorial, predictibilidad del entorno, comunicación, ansiedad, intereses y apoyos disponibles.</p>
           </div>
-
-          <p class="text-xl text-slate-600 leading-relaxed">En el trastorno del espectro autista, la actividad física puede estar condicionada por perfil sensorial, predictibilidad del entorno, comunicación, ansiedad, intereses y apoyos disponibles.</p>
 
           <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
             <div class="bg-slate-50 p-6 sm:p-8 rounded-2xl border border-slate-200 space-y-4">
@@ -502,26 +487,25 @@
             </div>
             <a href="https://www.dynamics-vr.com/evidencia-cientifica/" target="_blank" rel="noreferrer" class="mt-4 text-teal-700 hover:underline font-bold block">Consultar en la biblioteca Dynamics VR →</a>
           </div>
+
+          <!-- BOTONES DE RECURSOS AL PIE DEL CASO -->
+          <div class="pt-4 border-t border-slate-200 flex flex-wrap gap-4 items-center">
+            <a href="https://www.dynamics-vr.com/blog-de-fisioterapia-dynamics-vr/" target="_blank" rel="noreferrer" class="px-6 py-3 bg-slate-900 hover:bg-slate-800 text-white font-bold rounded-xl text-base transition shadow-sm">
+              Más artículos en Dynamics VR →
+            </a>
+            <a href="https://www.dynamics-vr.com/evidencia-cientifica/" target="_blank" rel="noreferrer" class="px-6 py-3 bg-teal-50 hover:bg-teal-100 text-teal-900 font-bold rounded-xl text-base border border-teal-200 transition">
+              Más evidencia científica en Dynamics VR →
+            </a>
+          </div>
         </article>
 
         <!-- 5. DISCAPACIDAD VISUAL -->
         <article id="tab-visual" class="profile-card hidden bg-white rounded-3xl border border-slate-200 p-8 sm:p-12 shadow-sm space-y-8">
-          <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-6 border-b border-slate-100 pb-6">
-            <div>
-              <span class="text-xs sm:text-sm font-bold uppercase tracking-wider text-teal-600 bg-teal-50 px-3.5 py-1.5 rounded-full border border-teal-200">Caso de uso</span>
-              <h3 class="text-3xl sm:text-4xl font-extrabold text-slate-900 mt-2">Discapacidad visual y baja visión</h3>
-            </div>
-            <div class="flex flex-wrap gap-3">
-              <a href="https://www.dynamics-vr.com/evidencia-cientifica/" target="_blank" rel="noreferrer" class="inline-flex items-center gap-1.5 px-5 py-2.5 bg-teal-50 hover:bg-teal-100 text-teal-800 text-sm sm:text-base font-bold rounded-xl border border-teal-200 transition">
-                Estudios Científicos →
-              </a>
-              <a href="https://www.dynamics-vr.com/blog-de-fisioterapia-dynamics-vr/" target="_blank" rel="noreferrer" class="inline-flex items-center gap-1.5 px-5 py-2.5 bg-slate-100 hover:bg-slate-200 text-slate-800 text-sm sm:text-base font-bold rounded-xl border border-slate-200 transition">
-                Artículos Dynamics VR →
-              </a>
-            </div>
+          <div>
+            <span class="text-xs sm:text-sm font-bold uppercase tracking-wider text-teal-600 bg-teal-50 px-3.5 py-1.5 rounded-full border border-teal-200">Caso de uso</span>
+            <h3 class="text-3xl sm:text-4xl font-extrabold text-slate-900 mt-2">Discapacidad visual y baja visión</h3>
+            <p class="text-xl text-slate-600 leading-relaxed mt-3">La baja visión y la discapacidad visual pueden limitar orientación, desplazamiento, lectura del entorno, confianza y acceso a actividad física segura.</p>
           </div>
-
-          <p class="text-xl text-slate-600 leading-relaxed">La baja visión y la discapacidad visual pueden limitar orientación, desplazamiento, lectura del entorno, confianza y acceso a actividad física segura.</p>
 
           <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
             <div class="bg-slate-50 p-6 sm:p-8 rounded-2xl border border-slate-200 space-y-4">
@@ -537,26 +521,25 @@
               <p class="text-base sm:text-lg text-slate-700 leading-relaxed">Proporciona acompañamiento individualizado, señalización háptica/auditiva y vinculación con actividades adaptadas (senderismo guiado con barras direccionales, tiro adaptado con miras táctiles/auditivas).</p>
             </div>
           </div>
+
+          <!-- BOTONES DE RECURSOS AL PIE DEL CASO -->
+          <div class="pt-4 border-t border-slate-200 flex flex-wrap gap-4 items-center">
+            <a href="https://www.dynamics-vr.com/blog-de-fisioterapia-dynamics-vr/" target="_blank" rel="noreferrer" class="px-6 py-3 bg-slate-900 hover:bg-slate-800 text-white font-bold rounded-xl text-base transition shadow-sm">
+              Más artículos en Dynamics VR →
+            </a>
+            <a href="https://www.dynamics-vr.com/evidencia-cientifica/" target="_blank" rel="noreferrer" class="px-6 py-3 bg-teal-50 hover:bg-teal-100 text-teal-900 font-bold rounded-xl text-base border border-teal-200 transition">
+              Más evidencia científica en Dynamics VR →
+            </a>
+          </div>
         </article>
 
         <!-- 6. TRASPLANTE HEPÁTICO -->
         <article id="tab-trasplante" class="profile-card hidden bg-white rounded-3xl border border-slate-200 p-8 sm:p-12 shadow-sm space-y-8">
-          <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-6 border-b border-slate-100 pb-6">
-            <div>
-              <span class="text-xs sm:text-sm font-bold uppercase tracking-wider text-teal-600 bg-teal-50 px-3.5 py-1.5 rounded-full border border-teal-200">Caso de uso</span>
-              <h3 class="text-3xl sm:text-4xl font-extrabold text-slate-900 mt-2">Trasplante hepático</h3>
-            </div>
-            <div class="flex flex-wrap gap-3">
-              <a href="https://www.dynamics-vr.com/evidencia-cientifica/" target="_blank" rel="noreferrer" class="inline-flex items-center gap-1.5 px-5 py-2.5 bg-teal-50 hover:bg-teal-100 text-teal-800 text-sm sm:text-base font-bold rounded-xl border border-teal-200 transition">
-                Estudios Científicos →
-              </a>
-              <a href="https://www.dynamics-vr.com/blog-de-fisioterapia-dynamics-vr/" target="_blank" rel="noreferrer" class="inline-flex items-center gap-1.5 px-5 py-2.5 bg-slate-100 hover:bg-slate-200 text-slate-800 text-sm sm:text-base font-bold rounded-xl border border-slate-200 transition">
-                Artículos Dynamics VR →
-              </a>
-            </div>
+          <div>
+            <span class="text-xs sm:text-sm font-bold uppercase tracking-wider text-teal-600 bg-teal-50 px-3.5 py-1.5 rounded-full border border-teal-200">Caso de uso</span>
+            <h3 class="text-3xl sm:text-4xl font-extrabold text-slate-900 mt-2">Trasplante hepático</h3>
+            <p class="text-xl text-slate-600 leading-relaxed mt-3">Tras un trasplante hepático pueden persistir fragilidad, baja capacidad física, miedo al esfuerzo y dificultades para retomar actividad estable.</p>
           </div>
-
-          <p class="text-xl text-slate-600 leading-relaxed">Tras un trasplante hepático pueden persistir fragilidad, baja capacidad física, miedo al esfuerzo y dificultades para retomar actividad estable.</p>
 
           <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
             <div class="bg-slate-50 p-6 sm:p-8 rounded-2xl border border-slate-200 space-y-4">
@@ -572,26 +555,25 @@
               <p class="text-base sm:text-lg text-slate-700 leading-relaxed">Monitorización de la tolerancia al esfuerzo y progresión milimétrica hacia actividades seguras de bajo impacto en clubes locales.</p>
             </div>
           </div>
+
+          <!-- BOTONES DE RECURSOS AL PIE DEL CASO -->
+          <div class="pt-4 border-t border-slate-200 flex flex-wrap gap-4 items-center">
+            <a href="https://www.dynamics-vr.com/blog-de-fisioterapia-dynamics-vr/" target="_blank" rel="noreferrer" class="px-6 py-3 bg-slate-900 hover:bg-slate-800 text-white font-bold rounded-xl text-base transition shadow-sm">
+              Más artículos en Dynamics VR →
+            </a>
+            <a href="https://www.dynamics-vr.com/evidencia-cientifica/" target="_blank" rel="noreferrer" class="px-6 py-3 bg-teal-50 hover:bg-teal-100 text-teal-900 font-bold rounded-xl text-base border border-teal-200 transition">
+              Más evidencia científica en Dynamics VR →
+            </a>
+          </div>
         </article>
 
         <!-- 7. ENFERMEDADES NEURODEGENERATIVAS -->
         <article id="tab-ela" class="profile-card hidden bg-white rounded-3xl border border-slate-200 p-8 sm:p-12 shadow-sm space-y-8">
-          <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-6 border-b border-slate-100 pb-6">
-            <div>
-              <span class="text-xs sm:text-sm font-bold uppercase tracking-wider text-teal-600 bg-teal-50 px-3.5 py-1.5 rounded-full border border-teal-200">Caso de uso</span>
-              <h3 class="text-3xl sm:text-4xl font-extrabold text-slate-900 mt-2">Enfermedades neurodegenerativas (ELA, Parkinson...)</h3>
-            </div>
-            <div class="flex flex-wrap gap-3">
-              <a href="https://www.dynamics-vr.com/evidencia-cientifica/" target="_blank" rel="noreferrer" class="inline-flex items-center gap-1.5 px-5 py-2.5 bg-teal-50 hover:bg-teal-100 text-teal-800 text-sm sm:text-base font-bold rounded-xl border border-teal-200 transition">
-                Estudios Científicos →
-              </a>
-              <a href="https://www.dynamics-vr.com/blog-de-fisioterapia-dynamics-vr/" target="_blank" rel="noreferrer" class="inline-flex items-center gap-1.5 px-5 py-2.5 bg-slate-100 hover:bg-slate-200 text-slate-800 text-sm sm:text-base font-bold rounded-xl border border-slate-200 transition">
-                Artículos Dynamics VR →
-              </a>
-            </div>
+          <div>
+            <span class="text-xs sm:text-sm font-bold uppercase tracking-wider text-teal-600 bg-teal-50 px-3.5 py-1.5 rounded-full border border-teal-200">Caso de uso</span>
+            <h3 class="text-3xl sm:text-4xl font-extrabold text-slate-900 mt-2">Enfermedades neurodegenerativas (ELA, Parkinson...)</h3>
+            <p class="text-xl text-slate-600 leading-relaxed mt-3">En enfermedades neurodegenerativas como ELA, Parkinson u otros procesos progresivos, la prioridad es sostener participación, autonomía posible, calidad de vida y adaptación a los cambios funcionales.</p>
           </div>
-
-          <p class="text-xl text-slate-600 leading-relaxed">En enfermedades neurodegenerativas como ELA, Parkinson u otros procesos progresivos, la prioridad es sostener participación, autonomía posible, calidad de vida y adaptación a los cambios funcionales.</p>
 
           <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
             <div class="bg-slate-50 p-6 sm:p-8 rounded-2xl border border-slate-200 space-y-4">
@@ -616,26 +598,35 @@
             </div>
             <a href="https://www.dynamics-vr.com/evidencia-cientifica/" target="_blank" rel="noreferrer" class="mt-4 text-teal-700 hover:underline font-bold block">Consultar en la biblioteca Dynamics VR →</a>
           </div>
+
+          <!-- BOTONES DE RECURSOS AL PIE DEL CASO -->
+          <div class="pt-4 border-t border-slate-200 flex flex-wrap gap-4 items-center">
+            <a href="https://www.dynamics-vr.com/blog-de-fisioterapia-dynamics-vr/" target="_blank" rel="noreferrer" class="px-6 py-3 bg-slate-900 hover:bg-slate-800 text-white font-bold rounded-xl text-base transition shadow-sm">
+              Más artículos en Dynamics VR →
+            </a>
+            <a href="https://www.dynamics-vr.com/evidencia-cientifica/" target="_blank" rel="noreferrer" class="px-6 py-3 bg-teal-50 hover:bg-teal-100 text-teal-900 font-bold rounded-xl text-base border border-teal-200 transition">
+              Más evidencia científica en Dynamics VR →
+            </a>
+          </div>
         </article>
 
         <!-- 8. OTROS CASOS -->
         <article id="tab-otros" class="profile-card hidden bg-white rounded-3xl border border-slate-200 p-8 sm:p-12 shadow-sm space-y-8">
-          <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-6 border-b border-slate-100 pb-6">
-            <div>
-              <span class="text-xs sm:text-sm font-bold uppercase tracking-wider text-teal-600 bg-teal-50 px-3.5 py-1.5 rounded-full border border-teal-200">Caso de uso</span>
-              <h3 class="text-3xl sm:text-4xl font-extrabold text-slate-900 mt-2">Otros casos de uso</h3>
-            </div>
-            <div class="flex flex-wrap gap-3">
-              <a href="https://www.dynamics-vr.com/evidencia-cientifica/" target="_blank" rel="noreferrer" class="inline-flex items-center gap-1.5 px-5 py-2.5 bg-teal-50 hover:bg-teal-100 text-teal-800 text-sm sm:text-base font-bold rounded-xl border border-teal-200 transition">
-                Estudios Científicos →
-              </a>
-              <a href="https://www.dynamics-vr.com/blog-de-fisioterapia-dynamics-vr/" target="_blank" rel="noreferrer" class="inline-flex items-center gap-1.5 px-5 py-2.5 bg-slate-100 hover:bg-slate-200 text-slate-800 text-sm sm:text-base font-bold rounded-xl border border-slate-200 transition">
-                Artículos Dynamics VR →
-              </a>
-            </div>
+          <div>
+            <span class="text-xs sm:text-sm font-bold uppercase tracking-wider text-teal-600 bg-teal-50 px-3.5 py-1.5 rounded-full border border-teal-200">Caso de uso</span>
+            <h3 class="text-3xl sm:text-4xl font-extrabold text-slate-900 mt-2">Otros casos de uso</h3>
+            <p class="text-xl text-slate-600 leading-relaxed mt-3">MA Neuro puede explorar otros casos de uso cuando exista una pregunta clara, una valoración profesional adecuada y evidencia específica sobre el objetivo que se quiere mejorar.</p>
           </div>
 
-          <p class="text-xl text-slate-600 leading-relaxed">MA Neuro puede explorar otros casos de uso cuando exista una pregunta clara, una valoración profesional adecuada y evidencia específica sobre el objetivo que se quiere mejorar.</p>
+          <!-- BOTONES DE RECURSOS AL PIE DEL CASO -->
+          <div class="pt-4 border-t border-slate-200 flex flex-wrap gap-4 items-center">
+            <a href="https://www.dynamics-vr.com/blog-de-fisioterapia-dynamics-vr/" target="_blank" rel="noreferrer" class="px-6 py-3 bg-slate-900 hover:bg-slate-800 text-white font-bold rounded-xl text-base transition shadow-sm">
+              Más artículos en Dynamics VR →
+            </a>
+            <a href="https://www.dynamics-vr.com/evidencia-cientifica/" target="_blank" rel="noreferrer" class="px-6 py-3 bg-teal-50 hover:bg-teal-100 text-teal-900 font-bold rounded-xl text-base border border-teal-200 transition">
+              Más evidencia científica en Dynamics VR →
+            </a>
+          </div>
         </article>
 
       </div>
