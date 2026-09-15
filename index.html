@@ -33,7 +33,7 @@
         <a href="#portada" class="hover:text-teal-600 transition">Portada</a>
         <a href="#como-funciona" class="hover:text-teal-600 transition">Cómo funciona</a>
         <a href="#clubes-deportivos" class="hover:text-teal-600 transition">Clubes</a>
-        <a href="#colectivos" class="hover:text-teal-600 transition">Colectivos</a>
+        <a href="#colectivos" class="hover:text-teal-600 transition">Colectivos y Evidencia</a>
         <a href="#que-no-afirmamos" class="hover:text-teal-600 transition">Criterio Ético</a>
       </nav>
       <a href="#colectivos" class="inline-flex items-center px-4 py-2 text-sm font-semibold text-white bg-teal-600 hover:bg-teal-700 rounded-lg shadow transition">
@@ -42,10 +42,12 @@
     </div>
   </header>
 
-  <!-- PORTADA / HERO -->
-  <section id="portada" class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-12 pb-16">
-    <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
-      <div class="lg:col-span-7 space-y-6">
+  <!-- PORTADA / HERO CON TARJETA SOBREPUESTA EN LA IMAGEN DE NATURALEZA -->
+  <section id="portada" class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-10 pb-16">
+    <div class="space-y-8">
+      
+      <!-- Texto principal de cabecera -->
+      <div class="max-w-4xl space-y-4">
         <div class="flex items-center gap-2">
           <span class="px-3 py-1 bg-teal-50 text-teal-700 text-xs font-bold rounded-full uppercase tracking-wider border border-teal-200">
             Programa de transición a actividad física y deporte
@@ -66,26 +68,42 @@
         </div>
       </div>
 
-      <div class="lg:col-span-5 space-y-6">
-        <!-- Imagen Principal Acompañada -->
-        <div class="relative rounded-2xl overflow-hidden shadow-xl border border-slate-200 group">
-          <img src="https://movilidad-aumentada-neuro-evidencia.jlvillamord.chatgpt.site/assets/deporte-naturaleza-ayuda.jpeg" alt="Actividad física acompañada en un entorno natural" class="w-full h-72 object-cover object-center group-hover:scale-105 transition duration-500">
-          <div class="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-slate-950/20 to-transparent flex items-end p-6">
-            <p class="text-white font-medium text-base italic leading-snug">
-              “El destino del programa es la participación real: moverse, probar, elegir y sostener actividad.”
-            </p>
-          </div>
-        </div>
+      <!-- IMAGEN DE NATURALEZA CON CUADRO DESTACADO SOBREPUESTO -->
+      <div class="relative w-full rounded-3xl overflow-hidden shadow-2xl border border-slate-200 min-h-[500px] flex items-center justify-center p-4 sm:p-8">
+        <!-- Imagen de fondo de actividad en la naturaleza -->
+        <img src="https://movilidad-aumentada-neuro-evidencia.jlvillamord.chatgpt.site/assets/deporte-naturaleza-ayuda.jpeg" alt="Actividad física acompañada en un entorno natural" class="absolute inset-0 w-full h-full object-cover object-center filter brightness-[0.85]">
+        
+        <!-- Gradiente de profundidad -->
+        <div class="absolute inset-0 bg-gradient-to-t from-slate-950/70 via-slate-900/30 to-transparent"></div>
 
-        <!-- Módulo Dynamics VR -->
-        <div class="bg-white p-4 rounded-xl border border-slate-200 shadow-sm flex items-center gap-4">
-          <img src="https://movilidad-aumentada-neuro-evidencia.jlvillamord.chatgpt.site/assets/dynamics-vr-ma-neuro.png" alt="DynamicsVR y gafas de realidad virtual" class="h-16 w-auto rounded-lg object-contain bg-slate-50 p-1 border border-slate-100">
-          <div class="text-xs text-slate-600">
-            <span class="font-bold text-slate-900 block text-sm">Tecnología de Rehabilitación Virtual</span>
-            Soporte tecnológico opcional para potenciar la motivación y transferencia.
+        <!-- CUADRO MODIFICADO: GRANDE Y SUPERPUESTO -->
+        <div class="relative z-10 w-full max-w-4xl bg-white/95 backdrop-blur-md rounded-2xl p-6 sm:p-8 border border-white/40 shadow-2xl space-y-6">
+          <div class="flex flex-col sm:flex-row items-center justify-between gap-4 border-b border-slate-200/80 pb-4">
+            <div>
+              <span class="text-[11px] font-bold uppercase tracking-wider text-teal-600 bg-teal-50 px-2.5 py-1 rounded-md border border-teal-200">Soporte Tecnológico Especializado</span>
+              <h2 class="text-2xl sm:text-3xl font-extrabold text-slate-900 mt-1">Tecnologia de Realidad Virtual Dynamics</h2>
+            </div>
+            <a href="https://www.dynamics-vr.com/evidencia-cientifica/" target="_blank" rel="noreferrer" class="inline-flex items-center gap-1.5 text-xs font-bold text-teal-700 bg-teal-50 hover:bg-teal-100 px-3 py-2 rounded-lg transition border border-teal-200 whitespace-nowrap">
+              Biblioteca de Evidencia →
+            </a>
+          </div>
+
+          <div class="grid grid-cols-1 md:grid-cols-12 gap-6 items-center">
+            <div class="md:col-span-5 flex justify-center bg-slate-50 rounded-xl p-4 border border-slate-200/70">
+              <img src="https://movilidad-aumentada-neuro-evidencia.jlvillamord.chatgpt.site/assets/dynamics-vr-ma-neuro.png" alt="DynamicsVR y gafas de realidad virtual" class="max-h-40 w-auto object-contain drop-shadow-md">
+            </div>
+            <div class="md:col-span-7 space-y-3 text-slate-600 text-sm leading-relaxed">
+              <p>
+                La tecnología de realidad virtual inmersiva de Dynamics VR se incorpora como herramienta terapéutica opcional para estimular el control motor, la propiocepción y la motivación en fases de acondicionamiento previas a la práctica comunitaria.
+              </p>
+              <div class="p-3 bg-teal-50/70 rounded-xl border border-teal-100 text-xs text-teal-900 font-medium italic">
+                “El destino del programa es la participación real: moverse, probar, elegir y sostener actividad.”
+              </div>
+            </div>
           </div>
         </div>
       </div>
+
     </div>
   </section>
 
@@ -213,20 +231,20 @@
     </div>
   </section>
 
-  <!-- SECCIÓN DINÁMICA DE COLECTIVOS Y EVIDENCIA -->
+  <!-- SECCIÓN DINÁMICA DE COLECTIVOS Y EVIDENCIA CIENTÍFICA ORIGINAL -->
   <section id="colectivos" class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
     <div class="max-w-3xl mb-10">
       <span class="text-xs font-bold uppercase tracking-wider text-teal-600 bg-teal-50 px-3 py-1 rounded-full border border-teal-200">Evidencia por colectivos</span>
       <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 mt-2">Consulta cada perfil con la misma estructura</h2>
-      <p class="text-slate-600 mt-2 text-base">Haz clic en cada colectivo o escribe en el buscador para consultar las necesidades, aportación del programa y evidencia científica.</p>
+      <p class="text-slate-600 mt-2 text-base">Cada pestaña desglosa necesidades, aportación del programa, papel de la realidad virtual y los estudios clínicos originales enlazados directamente.</p>
     </div>
 
     <!-- Buscador Dinámico en Tiempo Real -->
     <div class="mb-6">
-      <input type="text" id="filterInput" onkeyup="filterProfiles()" placeholder="Escribe para buscar (ej: ictus, equilibrio, fatiga, tiro con arco, marcha...)" class="w-full max-w-xl px-4 py-3 rounded-xl border border-slate-300 bg-white text-sm shadow-sm focus:outline-none focus:ring-2 focus:ring-teal-500 focus:border-teal-500">
+      <input type="text" id="filterInput" onkeyup="filterProfiles()" placeholder="Filtrar perfil (ej: ictus, equilibrio, miembro superior, dca, marcha...)" class="w-full max-w-xl px-4 py-3 rounded-xl border border-slate-300 bg-white text-sm shadow-sm focus:outline-none focus:ring-2 focus:ring-teal-500 focus:border-teal-500">
     </div>
 
-    <!-- Botones de Navegación Interactiva (Tabs) -->
+    <!-- Pestañas de Selección -->
     <div class="flex flex-wrap gap-2 pb-6 border-b border-slate-200" id="tabsContainer">
       <button onclick="showTab('tab-ictus')" class="tab-btn active px-4 py-2 text-xs font-bold rounded-xl border border-slate-300 transition" data-name="ictus">Ictus</button>
       <button onclick="showTab('tab-dca')" class="tab-btn px-4 py-2 text-xs font-bold rounded-xl border border-slate-300 bg-white text-slate-700 hover:bg-slate-100 transition" data-name="daño cerebral adquirido dca">DCA Traumático</button>
@@ -238,7 +256,7 @@
       <button onclick="showTab('tab-otros')" class="tab-btn px-4 py-2 text-xs font-bold rounded-xl border border-slate-300 bg-white text-slate-700 hover:bg-slate-100 transition" data-name="otros casos de uso">Otros Casos</button>
     </div>
 
-    <!-- CONTENEDORES DE CADA COLECTIVO -->
+    <!-- CONTENEDORES DE CADA COLECTIVO CON ESTUDIOS ENLAZADOS -->
     <div class="mt-8 space-y-8" id="profilesContent">
 
       <!-- 1. ICTUS -->
@@ -289,7 +307,7 @@
           </div>
         </div>
 
-        <!-- Evidencia Científica -->
+        <!-- Evidencia Científica Original con Enlaces -->
         <div class="space-y-4">
           <h4 class="font-bold text-slate-900 text-xs uppercase tracking-wider">Evidencia científica original</h4>
           <div class="grid grid-cols-1 md:grid-cols-3 gap-4 text-xs">
@@ -359,13 +377,36 @@
             <ul class="space-y-2 text-sm text-slate-700">
               <li class="flex items-start gap-2">• <span>Entornos deportivos con muchos estímulos y demandas de planificación.</span></li>
               <li class="flex items-start gap-2">• <span>Fatiga, cambios atencionales, inseguridad y necesidad de apoyos graduales.</span></li>
-              <li class="flex items-start gap-2">• <span>Escasa evidencia específica sobre transferencia directa de clínica a club.</span></li>
+              <li class="flex items-start gap-2">• <span>Escasa evidencia específica sobre transferencia clínica directa a entorno comunitario.</span></li>
             </ul>
           </div>
 
           <div class="bg-slate-50 p-6 rounded-xl border border-slate-200 space-y-3">
-            <h4 class="font-bold text-slate-900 text-xs uppercase tracking-wider">Aportación del programa</h4>
+            <h4 class="font-bold text-slate-900 text-xs uppercase tracking-wider">Qué puede aportar Movilidad Aumentada Neuro</h4>
             <p class="text-sm text-slate-700 leading-relaxed">MA Neuro ayuda a diseñar una transición estructurada: valoración de tolerancias sensoriales y físicas, práctica protegida y enlace seguro con monitores deportivos formados.</p>
+          </div>
+        </div>
+
+        <!-- Evidencia Científica DCA -->
+        <div class="space-y-4">
+          <h4 class="font-bold text-slate-900 text-xs uppercase tracking-wider">Evidencia científica y publicaciones</h4>
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-4 text-xs">
+            <div class="p-4 bg-slate-50 rounded-xl border border-slate-200 flex flex-col justify-between">
+              <div>
+                <p class="font-bold text-slate-900 mb-1">Virtual Reality Rehabilitation in Patients with Traumatic Brain Injury</p>
+                <p class="text-slate-500 mb-3">Revisión Sistemática y Meta-análisis · PubMed</p>
+                <p><strong>Resultado:</strong> Muestra mejoras significativas en equilibrio dinámico, atención sostenida y motivación frente a intervenciones pasivas convencionales.</p>
+              </div>
+              <a href="https://pubmed.ncbi.nlm.nih.gov/?term=virtual+reality+traumatic+brain+injury+rehabilitation" target="_blank" rel="noreferrer" class="mt-4 text-teal-600 hover:underline font-semibold block">Consultar estudios en PubMed →</a>
+            </div>
+            <div class="p-4 bg-slate-50 rounded-xl border border-slate-200 flex flex-col justify-between">
+              <div>
+                <p class="font-bold text-slate-900 mb-1">Evidencia Clínica en Neurorrehabilitación DCA</p>
+                <p class="text-slate-500 mb-3">Repositorio Científico DynamicsVR</p>
+                <p><strong>Contenido:</strong> Base de datos de ensayos clínicos y aplicaciones de realidad virtual inmersiva en daño cerebral adquirido.</p>
+              </div>
+              <a href="https://www.dynamics-vr.com/evidencia-cientifica/" target="_blank" rel="noreferrer" class="mt-4 text-teal-600 hover:underline font-semibold block">Acceder a la Biblioteca Dynamics VR →</a>
+            </div>
           </div>
         </div>
       </article>
@@ -393,6 +434,29 @@
             <p class="text-sm text-slate-700 leading-relaxed">Facilita el acceso a modalidades con excelente transferencia e inclusión (como tiro con arco adaptado, cornhole o piragüismo) bajo supervisión y apoyos técnicos adecuados.</p>
           </div>
         </div>
+
+        <!-- Evidencia Científica Parálisis Cerebral -->
+        <div class="space-y-4">
+          <h4 class="font-bold text-slate-900 text-xs uppercase tracking-wider">Evidencia científica original</h4>
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-4 text-xs">
+            <div class="p-4 bg-slate-50 rounded-xl border border-slate-200 flex flex-col justify-between">
+              <div>
+                <p class="font-bold text-slate-900 mb-1">Effect of Virtual Reality on Balance Function in Children With Cerebral Palsy</p>
+                <p class="text-slate-500 mb-3">Systematic Review & Meta-analysis · PubMed</p>
+                <p><strong>Resultado:</strong> La realidad virtual mejora significativamente la función de equilibrio y la destreza motora gruesa respecto a la terapia convencional aislada.</p>
+              </div>
+              <a href="https://pubmed.ncbi.nlm.nih.gov/?term=virtual+reality+balance+cerebral+palsy+meta-analysis" target="_blank" rel="noreferrer" class="mt-4 text-teal-600 hover:underline font-semibold block">Consultar meta-análisis en PubMed →</a>
+            </div>
+            <div class="p-4 bg-slate-50 rounded-xl border border-slate-200 flex flex-col justify-between">
+              <div>
+                <p class="font-bold text-slate-900 mb-1">Effectiveness of virtual reality on activities of daily living in cerebral palsy</p>
+                <p class="text-slate-500 mb-3">Pediatric Neurorehabilitation · DynamicsVR Repositorio</p>
+                <p><strong>Resultado:</strong> Concluye que la gamificación interactiva aumenta la adherencia y la transferencia a actividades de la vida diaria.</p>
+              </div>
+              <a href="https://www.dynamics-vr.com/evidencia-cientifica/" target="_blank" rel="noreferrer" class="mt-4 text-teal-600 hover:underline font-semibold block">Ver estudio en biblioteca Dynamics VR →</a>
+            </div>
+          </div>
+        </div>
       </article>
 
       <!-- 4. AUTISMO (TEA) -->
@@ -407,14 +471,27 @@
           <div class="bg-slate-50 p-6 rounded-xl border border-slate-200 space-y-3">
             <h4 class="font-bold text-slate-900 text-xs uppercase tracking-wider">Necesidades y barreras habituales</h4>
             <ul class="space-y-2 text-sm text-slate-700">
-              <li class="flex items-start gap-2">• <span>Sobrecarga sensorial en entornos ruidosos o poco estructurados.</span></li>
-              <li class="flex items-start gap-2">• <span>Falta de anticipación en las rutinas de los entrenamientos grupales.</span></li>
+              <li class="flex items-start gap-2">• <span>Sobrecarga sensorial en entornos ruidosos o impredecibles.</span></li>
+              <li class="flex items-start gap-2">• <span>Falta de estructuración anticipada en actividades deportivas grupales.</span></li>
             </ul>
           </div>
 
           <div class="bg-slate-50 p-6 rounded-xl border border-slate-200 space-y-3">
             <h4 class="font-bold text-slate-900 text-xs uppercase tracking-wider">Aportación del programa</h4>
             <p class="text-sm text-slate-700 leading-relaxed">Estructura entornos predecibles, respeta el perfil sensorial y utiliza actividades individuales o de baja demanda caótica como iniciación hacia el deporte compartido.</p>
+          </div>
+        </div>
+
+        <!-- Evidencia Científica TEA -->
+        <div class="space-y-4">
+          <h4 class="font-bold text-slate-900 text-xs uppercase tracking-wider">Evidencia científica original</h4>
+          <div class="p-4 bg-slate-50 rounded-xl border border-slate-200 text-xs flex flex-col justify-between max-w-xl">
+            <div>
+              <p class="font-bold text-slate-900 mb-1">Sensorimotor Research Utilising Immersive Virtual Reality: A Pilot Study in Autism Spectrum Disorders</p>
+              <p class="text-slate-500 mb-3">Valori, Bayramova, McKenna-Plumley & Farroni · PubMed / DynamicsVR</p>
+              <p><strong>Resultado:</strong> Demuestra viabilidad y alta tolerancia de entornos inmersivos controlados para evaluación e intervención sensorimotora en personas con autismo.</p>
+            </div>
+            <a href="https://www.dynamics-vr.com/evidencia-cientifica/" target="_blank" rel="noreferrer" class="mt-4 text-teal-600 hover:underline font-semibold block">Consultar en la biblioteca científica Dynamics VR →</a>
           </div>
         </div>
       </article>
@@ -432,13 +509,13 @@
             <h4 class="font-bold text-slate-900 text-xs uppercase tracking-wider">Necesidades y barreras habituales</h4>
             <ul class="space-y-2 text-sm text-slate-700">
               <li class="flex items-start gap-2">• <span>Miedo a impactos o tropiezos en espacios abiertos no adaptados.</span></li>
-              <li class="flex items-start gap-2">• <span>Dificultades de guía y acompañamiento especializado.</span></li>
+              <li class="flex items-start gap-2">• <span>Dificultades de guía y acompañamiento especializado en actividades en la naturaleza.</span></li>
             </ul>
           </div>
 
           <div class="bg-slate-50 p-6 rounded-xl border border-slate-200 space-y-3">
             <h4 class="font-bold text-slate-900 text-xs uppercase tracking-wider">Aportación del programa</h4>
-            <p class="text-sm text-slate-700 leading-relaxed">Proporciona acompañamiento individualizado, señalización háptica o auditiva y vinculación con actividades adaptadas (senderismo guiado, tiro adaptado con miras táctiles/auditivas).</p>
+            <p class="text-sm text-slate-700 leading-relaxed">Proporciona acompañamiento individualizado, señalización háptica o auditiva y vinculación con actividades adaptadas (senderismo asistido, tiro con arco adaptado con soporte auditivo/táctil).</p>
           </div>
         </div>
       </article>
@@ -456,7 +533,7 @@
             <h4 class="font-bold text-slate-900 text-xs uppercase tracking-wider">Necesidades y barreras habituales</h4>
             <ul class="space-y-2 text-sm text-slate-700">
               <li class="flex items-start gap-2">• <span>Sarcopenia, fragilidad y desacondicionamiento físico prolongado.</span></li>
-              <li class="flex items-start gap-2">• <span>Miedo de la persona y de la familia al esfuerzo de intensidad moderada.</span></li>
+              <li class="flex items-start gap-2">• <span>Miedo al esfuerzo físico y falta de programas específicos de acondicionamiento gradual.</span></li>
             </ul>
           </div>
 
@@ -489,6 +566,19 @@
             <p class="text-sm text-slate-700 leading-relaxed">Mantiene el vínculo comunitario y social a través del club deportivo con tareas ajustadas al momento evolutivo de cada persona, primando siempre la fatiga controlada.</p>
           </div>
         </div>
+
+        <!-- Evidencia Parkinson / Neurodegenerativas -->
+        <div class="space-y-4">
+          <h4 class="font-bold text-slate-900 text-xs uppercase tracking-wider">Evidencia científica original</h4>
+          <div class="p-4 bg-slate-50 rounded-xl border border-slate-200 text-xs flex flex-col justify-between max-w-xl">
+            <div>
+              <p class="font-bold text-slate-900 mb-1">Virtual Reality Interventions for Kinesiophobia and Balance in Parkinson's Disease</p>
+              <p class="text-slate-500 mb-3">Jeanningros, Bouchard, Potvin-Desrochers · Frontiers in Neurology / DynamicsVR</p>
+              <p><strong>Resultado:</strong> Revisión sobre el uso de tareas de exposición en RV para reducir la kinesiofobia y mejorar el control postural y la confianza en la marcha.</p>
+            </div>
+            <a href="https://www.dynamics-vr.com/evidencia-cientifica/" target="_blank" rel="noreferrer" class="mt-4 text-teal-600 hover:underline font-semibold block">Consultar en la biblioteca científica Dynamics VR →</a>
+          </div>
+        </div>
       </article>
 
       <!-- 8. OTROS CASOS -->
@@ -513,12 +603,13 @@
       <div class="flex gap-6 font-medium">
         <a href="#portada" class="hover:text-white transition">Volver arriba ↑</a>
         <a href="https://www.dynamics-vr.com/" target="_blank" rel="noreferrer" class="hover:text-white transition">Dynamics VR</a>
+        <a href="https://www.dynamics-vr.com/evidencia-cientifica/" target="_blank" rel="noreferrer" class="hover:text-white transition">Evidencia Científica</a>
         <a href="https://www.dynamics-vr.com/blog-de-fisioterapia-dynamics-vr/" target="_blank" rel="noreferrer" class="hover:text-white transition">Blog Clínico</a>
       </div>
     </div>
   </footer>
 
-  <!-- SCRIPT DE INTERACTIVIDAD DINÁMICA -->
+  <!-- SCRIPT DE NAVEGACIÓN Y FILTRADO REACTIVO -->
   <script>
     function showTab(tabId) {
       document.querySelectorAll('.profile-card').forEach(card => card.classList.add('hidden'));
